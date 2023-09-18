@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 516616397
+    locked: 0
+  - name: Actors
+    uniqueID: 2780725117
+    locked: 0
+  - name: Table
+    uniqueID: 2292821307
+    locked: 0
+  - name: UI
+    uniqueID: 4098789451
+    locked: 0

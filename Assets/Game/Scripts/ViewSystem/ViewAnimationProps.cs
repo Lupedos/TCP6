@@ -1,4 +1,6 @@
 
+using DG.Tweening;
+
 namespace Game.UI
 {
 
@@ -6,6 +8,7 @@ namespace Game.UI
     public class ViewAnimationProps
     {
         public float duration = 1;
+        public Ease interpolationMode = Ease.InOutCubic;
     }
 
 }

@@ -1,10 +1,11 @@
+using DG.Tweening;
 using Game.Table;
 using Game.UI;
 using UnityEngine;
 
 public class TableObjectInterface : MonoBehaviour, IViewable
 {
-    [SerializeField] private ViewEventProps _eventProps;
+    [SerializeField] private ViewEventProps eventProps;
 
     public CanvasGroup CanvasGroup { get; private set; }
 
@@ -19,7 +20,8 @@ public class TableObjectInterface : MonoBehaviour, IViewable
 
     public void Hide()
     {
-        CanvasGroup.alpha = 0;
+        CanvasGroup.DOFade(0, eventProps.outEvent.duration).SetEase(eventProps.outEvent.interpolationMode);
+        //transform.DOScale(0, eventProps.outEvent.duration).SetEase(eventProps.outEvent.interpolationMode);
         CanvasGroup.interactable = false;
         CanvasGroup.blocksRaycasts = false;
 
@@ -27,10 +29,14 @@ public class TableObjectInterface : MonoBehaviour, IViewable
 
     public void Show()
     {
-        CanvasGroup.alpha = 1;
+        CanvasGroup.DOFade(1, eventProps.inEvent.duration).SetEase(eventProps.inEvent.interpolationMode);
+        //transform.DOScale(Vector3.one, eventProps.outEvent.duration).SetEase(eventProps.outEvent.interpolationMode);
+
         CanvasGroup.interactable = true;
         CanvasGroup.blocksRaycasts = true;
     }
+
+
 }
 
 

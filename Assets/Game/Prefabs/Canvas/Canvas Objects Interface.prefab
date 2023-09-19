@@ -234,11 +234,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eabdaf1e4ee6d248a5047c9d27a38dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventProps:
+  eventProps:
     inEvent:
-      duration: 1
+      duration: 0.5
+      interpolationMode: 9
     outEvent:
-      duration: 1
+      duration: 0.5
+      interpolationMode: 8
 --- !u!225 &1860494781847178176
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -379,11 +381,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eabdaf1e4ee6d248a5047c9d27a38dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventProps:
+  eventProps:
     inEvent:
-      duration: 1
+      duration: 0.5
+      interpolationMode: 9
     outEvent:
-      duration: 1
+      duration: 0.5
+      interpolationMode: 8
 --- !u!225 &7424233584162073069
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -735,11 +739,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eabdaf1e4ee6d248a5047c9d27a38dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventProps:
+  eventProps:
     inEvent:
-      duration: 1
+      duration: 0.5
+      interpolationMode: 9
     outEvent:
-      duration: 1
+      duration: 0.5
+      interpolationMode: 8
 --- !u!225 &3598254441038151553
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1198,11 +1204,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eabdaf1e4ee6d248a5047c9d27a38dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventProps:
+  eventProps:
     inEvent:
-      duration: 1
+      duration: 0.5
+      interpolationMode: 9
     outEvent:
-      duration: 1
+      duration: 0.5
+      interpolationMode: 8
 --- !u!225 &8082435644108151278
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1267,11 +1275,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eabdaf1e4ee6d248a5047c9d27a38dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventProps:
+  eventProps:
     inEvent:
-      duration: 1
+      duration: 0.5
+      interpolationMode: 9
     outEvent:
-      duration: 1
+      duration: 0.5
+      interpolationMode: 8
 --- !u!225 &5837983041486855379
 CanvasGroup:
   m_ObjectHideFlags: 0

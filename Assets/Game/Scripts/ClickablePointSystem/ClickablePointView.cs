@@ -46,12 +46,12 @@ public class ClickablePointView : MonoBehaviour
         if(point.IsCorret)
         {
             image.sprite = corretSprite;
-            PlayAudioClip(corretClip);
+            SoundEffectPlayerManager.Instance.PlayCickableSfx(corretClip);
 
         } else
         {
             image.sprite = wrongSprite;
-            PlayAudioClip(wrongClip);
+            SoundEffectPlayerManager.Instance.PlayCickableSfx(wrongClip);
         }
 
         //animation of click point
@@ -62,11 +62,6 @@ public class ClickablePointView : MonoBehaviour
 
     }
 
-    public void PlayAudioClip(AudioClip clip)
-    {
 
-        audioSource.clip = clip;
-        audioSource.Play();
-    }
 
 }

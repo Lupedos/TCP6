@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
-[Serializable]
+[RequireComponent(typeof(AudioSource))]
 public class ClickablePointController : MonoBehaviour, IClickableInterfaceEvents
 {
     private ClickablePoint[] clicablePoints;

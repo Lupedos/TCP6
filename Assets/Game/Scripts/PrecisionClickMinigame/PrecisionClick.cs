@@ -1,36 +1,40 @@
 using DG.Tweening;
+using Game.Table;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PrecisionClick : MonoBehaviour
+public class PrecisionClick : MonoBehaviour, IActivable
 {
     [SerializeField] private Scrollbar scrollbar;
+    [SerializeField] private RectTransform range;
 
-    [SerializeField] private float speed = 0.5f;
+    [SerializeField] private float minSpeed = 1;
+    private float speedMultiplier  = 1;
+    public event Action<bool> Activate;
 
-    public bool isRunning = true;
+    public bool IsActive { get; private set;}
 
+    public bool IsPointerInRange()
+    {
+        //se o ponteiro do slider (região laranja) está situado dentro da faixa de acerto( região verde)
+        return scrollbar.value > 0.5f - range.localScale.x/2  && scrollbar.value < 0.5f + range.localScale.x/2;
+    }
     public float GetSinValue()
     {
-        return Mathf.Sin(speed * Time.time) / 2 + 0.5f;
+        return Mathf.Sin(minSpeed * speedMultiplier * Time.time) / 2 + 0.5f;
     }
 
-    private void Start()
-    {
-        StartLoop();
-
-    }
     private void Update()
     {
-        if (isRunning) scrollbar.value = GetSinValue();
+
+        if (IsActive) scrollbar.value = GetSinValue();
         else return;
 
         if (Input.GetMouseButtonDown(0))
         {
-            isRunning = false;
             if (IsPointerInRange()) Debug.Log("acertou");
             else Debug.Log("errou");
         }
@@ -38,21 +42,23 @@ public class PrecisionClick : MonoBehaviour
     }
 
 
-    public void StartLoop()
+
+    public void SetActive(bool active)
     {
-        //if(!isRunning) return;
-        //DOTween.To(() => scrollbar.value, x => scrollbar.value = x, 1, 1).SetEase(Ease.InOutExpo).OnComplete(() =>
-        //{
-
-
-        //});
+        IsActive = active;
+        Activate?.Invoke(active);
 
     }
 
-    public bool IsPointerInRange()
+    //speedMultiplier: beetween 1 and 2;
+    //barWidhtRange: beetween 0.1f to 0.5f
+    public void StartLoopMovement(float speedMultiplier, float barWidthRange) 
     {
-        return scrollbar.value > 0.5f - 0.15f && scrollbar.value < 0.5f + 0.15f;
+        this.speedMultiplier = speedMultiplier;
+        range.localScale.Set(barWidthRange, range.localScale.y, range.localScale.z);
+
     }
+
 
 }
 

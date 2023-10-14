@@ -886,6 +886,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4617293941695338557}
     m_Modifications:
+    - target: {fileID: 647633835783409812, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 647633835783409812, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 647633835783409812, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478344210783810047, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2857072956815594217, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
       propertyPath: m_Name
       value: Seringa UI
@@ -970,6 +986,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7108281719051851080, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 7306447724866030030, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: seringa
+      value: 
+      objectReference: {fileID: 3573171793635596500}
+    - target: {fileID: 7306447724866030030, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: seringaMovementScale
+      value: 19.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552814608024974130, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: range
+      value: 
+      objectReference: {fileID: 6615541380070612232}
+    - target: {fileID: 8552814608024974130, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: minSpeed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -978,5 +1014,15 @@ PrefabInstance:
 --- !u!224 &473212739288412447 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6170762882928409731, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+  m_PrefabInstance: {fileID: 5995351443180440988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &3573171793635596500 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7108281719051851080, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+  m_PrefabInstance: {fileID: 5995351443180440988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &6615541380070612232 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 647633835783409812, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
   m_PrefabInstance: {fileID: 5995351443180440988}
   m_PrefabAsset: {fileID: 0}

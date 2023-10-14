@@ -1,4 +1,5 @@
 using Game.Table;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,8 +12,13 @@ namespace Game.Table
     {
         private Image image;
         private IActivable activable;
+
+        public event Action<bool> Activate;
+
         //[SerializeField] private EventTrigger eventTrigger;
         public CanvasGroup CanvasGroup { get; private set; }
+
+        public bool IsActive { get; private set;}
 
         private void Awake()
         {
@@ -47,6 +53,13 @@ namespace Game.Table
         {
             image.color = new Color(0, 0, 0, 255);
 
+        }
+
+        public void SetActive(bool active)
+        {
+            IsActive = active;
+            Activate?.Invoke(active);
+            
         }
     }
 

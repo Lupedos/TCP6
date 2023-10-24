@@ -309,11 +309,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &1489021931 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6615541380070612232, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
-  m_PrefabInstance: {fileID: 4617293940678026888}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1589956170
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,10 +458,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1333017552058301907, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2179631226370240220, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -515,17 +506,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2702854450061311662, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
-      propertyPath: Range
-      value: 
-      objectReference: {fileID: 1489021931}
-    - target: {fileID: 2702854450061311662, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
-      propertyPath: range
-      value: 
-      objectReference: {fileID: 1489021931}
-    - target: {fileID: 2702854450061311662, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
-      propertyPath: minSpeed
-      value: 2
+    - target: {fileID: 3573171793635596500, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 3573171793635596500, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3573171793635596500, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3573171793635596500, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 3573171793635596500, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4617293941695338553, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_Name
@@ -623,10 +622,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5167852420270881891, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5738153365163804090, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -651,28 +646,24 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6615541380070612232, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
-      propertyPath: m_SizeDelta.x
+    - target: {fileID: 7003540032804480312, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: xOffset
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6615541380070612232, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
+    - target: {fileID: 7003540032804480312, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: downMoveScale
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6615541380070612232, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
+    - target: {fileID: 7003540032804480312, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: seringaDownMove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7003540032804480312, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: seringaMovementScale
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7754292545205255699, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_Size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7754292545205255699, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
-      propertyPath: m_Value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7754292545205255699, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
-      propertyPath: m_NumberOfSteps
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}

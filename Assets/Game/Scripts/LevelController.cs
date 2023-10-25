@@ -33,6 +33,7 @@ public class LevelController : MonoBehaviour
 
     }
 
+
     void OnDestroy()
     {
                 foreach(IObjective iObjective in objectiveMinigames) {
@@ -68,12 +69,22 @@ public class LevelController : MonoBehaviour
     }
 
     public void AnyObjectiveComplete() {
+        Debug.Log("algo mudou");
         if(EveryObjectiveComplete()) 
         {
-            LevelComplete?.Invoke();
-            button_finalizarExpediente.gameObject.SetActive(true);
+            FinishMinigames();
         }
 
     }
+
+
+
+    public void FinishMinigames() 
+    {
+        LevelComplete?.Invoke();
+        button_finalizarExpediente.gameObject.SetActive(true);
+    }
+
+
 
 }

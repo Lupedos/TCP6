@@ -56,8 +56,9 @@ public class SeringaForceState : State
         seringaController.SetMessage("Muito bem");
         seringaController.PrecisionClick.SetActive(false);
         yield return new WaitForSeconds(1);
-        seringaController.SeringaObjectViewable.SetActive(false);
+        seringaController.SetComplete();
 
+        seringaController.SeringaObjectViewable.SetActive(false);
 
     }
 

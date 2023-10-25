@@ -1,18 +1,44 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
+/// <summary>
+/// 1. Classe que observe quando algum objetivo foi cumprido.
+/// 2. Em seguida, verifica se todos foram cumpridos.
+/// 3. Se todos foram cumpridos, dispara um evento sinalizando que todos os objetivos foram cumpridos (EveryObjectiveComplete)
+/// </summary>
 public class LevelController : MonoBehaviour
 {
+    [SerializeField] private Button button_finalizarExpediente;
     private List<IObjective> objectiveMinigames = new();
     private IObjective fichaObjective; 
+    public event Action LevelComplete = delegate {};
+
+
     void Start()
     {
         FindObjectiveMinigames();
         fichaObjective = FindObjectOfType<FichaController>().GetComponent<IObjective>();
 
+        foreach(IObjective iObjective in objectiveMinigames) {
+            iObjective.OnComplete += AnyObjectiveComplete;
+        }
+        fichaObjective.OnComplete += AnyObjectiveComplete;
+
+
+
+        button_finalizarExpediente.gameObject.SetActive(false);
+
+
+    }
+
+    void OnDestroy()
+    {
+                foreach(IObjective iObjective in objectiveMinigames) {
+            iObjective.OnComplete -= AnyObjectiveComplete;
+        }
+        fichaObjective.OnComplete -= AnyObjectiveComplete;
     }
 
     private void FindObjectiveMinigames() {
@@ -28,7 +54,7 @@ public class LevelController : MonoBehaviour
     
 
 
-    public bool LevelIsCompleted() 
+    public bool EveryObjectiveComplete() 
     {
         foreach(Minigame minigame in objectiveMinigames) 
         {
@@ -41,24 +67,13 @@ public class LevelController : MonoBehaviour
 
     }
 
-}
+    public void AnyObjectiveComplete() {
+        if(EveryObjectiveComplete()) 
+        {
+            LevelComplete?.Invoke();
+            button_finalizarExpediente.gameObject.SetActive(true);
+        }
 
-
-public class Minigame : MonoBehaviour, IObjective
-{
-    public bool Complete { get; set ; } = false;
-
-    public event Action OnComplete = delegate {};
-
-    public void SetComplete() 
-    {
-        Complete = true;
-        OnComplete?.Invoke();
     }
-}
-
-public interface IObjective {
-    public bool Complete {get;  set;}
-    public  event Action OnComplete;
 
 }

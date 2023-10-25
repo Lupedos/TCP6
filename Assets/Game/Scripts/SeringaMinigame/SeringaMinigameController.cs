@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class SeringaMinigameController : MonoBehaviour
+public class SeringaMinigameController : Minigame
 {
     [SerializeField] private TMP_Text text_message;
     [SerializeField] private PrecisionClick precisionClick;

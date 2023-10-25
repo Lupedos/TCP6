@@ -2,10 +2,8 @@ using Game.Table;
 using System;
 using UnityEngine;
 
-
-public class ImageMicrospopio : MonoBehaviour, IActivable
+public class RaioXMinigame : Minigame, IActivable
 {
-
 
     public bool IsActive { get; private set; } = false;
 
@@ -13,7 +11,7 @@ public class ImageMicrospopio : MonoBehaviour, IActivable
 
     //contagem de pontos de click corretos
     [SerializeField] ClickablePointController clickablePointController;
-    public ClickablePointController ClickablePointController  => clickablePointController; 
+    public ClickablePointController ClickablePointController => clickablePointController;
 
     private void Start()
     {
@@ -28,9 +26,6 @@ public class ImageMicrospopio : MonoBehaviour, IActivable
         Activate?.Invoke(active);
 
     }
-
-
-
 
 
 }

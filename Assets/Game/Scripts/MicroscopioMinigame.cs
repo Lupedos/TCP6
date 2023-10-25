@@ -2,7 +2,8 @@ using Game.Table;
 using System;
 using UnityEngine;
 
-public class RaioX : MonoBehaviour, IActivable
+
+public class MicroscopioMinigame : Minigame, IActivable
 {
 
     public bool IsActive { get; private set; } = false;
@@ -11,7 +12,7 @@ public class RaioX : MonoBehaviour, IActivable
 
     //contagem de pontos de click corretos
     [SerializeField] ClickablePointController clickablePointController;
-    public ClickablePointController ClickablePointController => clickablePointController;
+    public ClickablePointController ClickablePointController  => clickablePointController; 
 
     private void Start()
     {
@@ -26,6 +27,9 @@ public class RaioX : MonoBehaviour, IActivable
         Activate?.Invoke(active);
 
     }
+
+
+
 
 
 }

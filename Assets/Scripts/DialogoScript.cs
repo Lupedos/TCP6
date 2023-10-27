@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
+using System;
 
 public class DialogoScript : MonoBehaviour
 {
@@ -17,10 +19,18 @@ public class DialogoScript : MonoBehaviour
     [SerializeField] private CanvasGroup myTextUI;
     private bool fadeIn = false;
     private bool fadeOut = false; 
+
+    [Space(10)]
+    public UnityEvent inicioDialogo;
+    public UnityEvent fimDialogo;
+    
+    
     void Start()
     {
         inicioConversa = false; 
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -68,11 +78,14 @@ public class DialogoScript : MonoBehaviour
     
     void InicioDialogo()
     {
+
         dialogoIndex = 0;
         StartCoroutine(MostrarDialogo());
         inicioConversa = true;
         passiente.gameObject.SetActive(true);
         fadeIn = true;
+
+        inicioDialogo?.Invoke();
     }
 
     void proximoDialogo()
@@ -90,6 +103,7 @@ public class DialogoScript : MonoBehaviour
             passiente.gameObject.SetActive(false);
             conversando = false;
             fadeOut = true;  
+            fimDialogo?.Invoke();
         }
     }
 
@@ -118,3 +132,5 @@ public class DialogoScript : MonoBehaviour
         }
     }
 }
+
+

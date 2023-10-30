@@ -23,6 +23,7 @@ public class GameStateController : StateController
 
     public void NextState() 
     {
+        Debug.Log("Next state");
         if(IsLastState()) return;
         CurrentState = statesOrdered[CurrentStateIndex + 1];
     }

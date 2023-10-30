@@ -1,4 +1,4 @@
-using Game.Table;
+using Game;
 using System;
 using UnityEngine;
 

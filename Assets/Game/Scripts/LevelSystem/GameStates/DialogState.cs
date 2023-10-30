@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class DialogState : State
 {
-    [SerializeField] private DialogoScript dialogoScript;
+    [SerializeField] private DialogoController dialogoController;
 
 
     public override void StateStart()
     {
+        dialogoController.SetActive(true);
     }
 
     public override void StateUpdate()
@@ -17,6 +18,7 @@ public class DialogState : State
 
     public override void StateExit()
     {
+        dialogoController.SetActive(false);
     }
 
 }

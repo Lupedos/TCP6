@@ -6,10 +6,6 @@ using UnityEngine;
 public class MicroscopioMinigame : Minigame, IActivable
 {
 
-    public bool IsActive { get; private set; } = false;
-
-    public event Action<bool> Activate;
-
     //contagem de pontos de click corretos
     [SerializeField] ClickablePointController clickablePointController;
     public ClickablePointController ClickablePointController  => clickablePointController; 
@@ -19,17 +15,6 @@ public class MicroscopioMinigame : Minigame, IActivable
         clickablePointController = GetComponent<ClickablePointController>();
 
     }
-
-
-    public void SetActive(bool active)
-    {
-        IsActive = active;
-        Activate?.Invoke(active);
-
-    }
-
-
-
 
 
 }

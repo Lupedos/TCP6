@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class ClickablePointController : MonoBehaviour, IClickableInterfaceEvents
 {
     private ClickablePoint[] clicablePoints;
+    private IObjective iObjective;
     private int correntClickCount = 0;
     private int wrongClickCount = 0;
 
@@ -14,15 +15,22 @@ public class ClickablePointController : MonoBehaviour, IClickableInterfaceEvents
     public event Action<int> WrongClick;
     public event Action OnGotThemAllRight;
     public event Action OnTryedAllPoints;
+    
 
     private int TotalClick => correntClickCount + wrongClickCount;
     public bool TryedAllPoints => (TotalClick == clicablePoints.Length);
     //acertou todos ja?
     public bool GotThemAllRight => (GetCorrectPointCount() == correntClickCount);
 
+    void Awake()
+    {
+        iObjective = GetComponent<IObjective>();
+        clicablePoints = GetComponentsInChildren<ClickablePoint>();
+
+    }
+
     private void Start()
     {
-        clicablePoints = GetComponentsInChildren<ClickablePoint>();
 
         SubscribeOnClickPoints();
 
@@ -51,7 +59,6 @@ public class ClickablePointController : MonoBehaviour, IClickableInterfaceEvents
         {
             correntClickCount++;
             CorrectClick?.Invoke(correntClickCount);
-               
         }
         else
         {
@@ -74,12 +81,12 @@ public class ClickablePointController : MonoBehaviour, IClickableInterfaceEvents
 
     public void Subscription()
     {
-        throw new NotImplementedException();
+        
     }
 
     public void Unsubscription()
     {
-        throw new NotImplementedException();
+
     }
 }
 

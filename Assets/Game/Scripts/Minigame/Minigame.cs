@@ -1,7 +1,8 @@
 using System;
+using Game;
 using UnityEngine;
 
-public class Minigame : MonoBehaviour, IObjective
+public class Minigame : MonoBehaviour, IObjective, IActivable
 {
     public bool Complete { get; set ; } = false;
 
@@ -9,7 +10,23 @@ public class Minigame : MonoBehaviour, IObjective
 
     public void SetComplete() 
     {
+        Debug.Log("set complete minigame: "+gameObject.name);
         Complete = true;
         OnComplete?.Invoke();
     }
+
+
+
+    public bool IsActive { get; private set; } = false;
+
+    public event Action<bool> Activate;
+    public void SetActive(bool active)
+    {
+        IsActive = active;
+        Activate?.Invoke(active);
+
+    }
+
+
+
 }

@@ -2,12 +2,8 @@ using Game;
 using System;
 using UnityEngine;
 
-public class RaioXMinigame : Minigame, IActivable
+public class RaioXMinigame : Minigame
 {
-
-    public bool IsActive { get; private set; } = false;
-
-    public event Action<bool> Activate;
 
     //contagem de pontos de click corretos
     [SerializeField] ClickablePointController clickablePointController;
@@ -16,14 +12,6 @@ public class RaioXMinigame : Minigame, IActivable
     private void Start()
     {
         clickablePointController = GetComponent<ClickablePointController>();
-
-    }
-
-
-    public void SetActive(bool active)
-    {
-        IsActive = active;
-        Activate?.Invoke(active);
 
     }
 

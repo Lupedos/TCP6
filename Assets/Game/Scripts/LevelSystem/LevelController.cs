@@ -23,6 +23,13 @@ public class LevelController : MonoBehaviour
         return fichaController.JogadorEscolheuContaminado == DiagnosticoCorretoContaminado;
     }
 
+    public bool LevelTemMinigames() 
+    {
+        return FindObjectsOfType<Minigame>() != null;
+
+    }
+
+
 
     void Start()
     {
@@ -51,7 +58,10 @@ public class LevelController : MonoBehaviour
         fichaObjective.OnComplete -= AnyObjectiveComplete;
     }
 
-    private void FindObjectiveMinigames() {
+    private void FindObjectiveMinigames() 
+    {
+        if(!LevelTemMinigames()) return;
+
         objectiveMinigames.Clear();
         Minigame[] minigames = FindObjectsOfType<Minigame>();
         foreach(Minigame minigame in minigames) 
@@ -66,9 +76,12 @@ public class LevelController : MonoBehaviour
 
     public bool EveryObjectiveComplete() 
     {
-        foreach(Minigame minigame in objectiveMinigames) 
+        if(LevelTemMinigames()) 
         {
-            if(!minigame.Complete) return false;
+            foreach(Minigame minigame in objectiveMinigames) 
+            {
+                if(!minigame.Complete) return false;
+            }
         }
         if(!fichaObjective.Complete) return false;
 

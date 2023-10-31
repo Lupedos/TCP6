@@ -180,17 +180,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8ee9fedd02e24747ad53bf0d60a92d3, type: 3}
---- !u!114 &93546859 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4683805716108238465, guid: 8824623d26953d74781dc853a8bb33ca, type: 3}
-  m_PrefabInstance: {fileID: 6652266023225472850}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13969d9b2480b9341924559740e932ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &103268682
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,17 +398,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
---- !u!114 &588029163 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-  m_PrefabInstance: {fileID: 580378050}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5448efe9d7454641b713d367ed94323, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1101346414 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9043684905467702319, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
@@ -801,14 +779,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4518031506479642853, guid: f7f360de6779b01448322c7f59518401, type: 3}
-      propertyPath: dialogoScript
-      value: 
-      objectReference: {fileID: 588029163}
-    - target: {fileID: 7602944558302434220, guid: f7f360de6779b01448322c7f59518401, type: 3}
-      propertyPath: sceneLoader
-      value: 
-      objectReference: {fileID: 93546859}
     - target: {fileID: 7602944558302434220, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: button_finalizarExpediente
       value: 

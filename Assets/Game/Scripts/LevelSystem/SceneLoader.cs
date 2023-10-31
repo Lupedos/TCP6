@@ -18,7 +18,6 @@ public class SceneLoader : MonoBehaviour
     {
         canvasGroup.alpha = 1;
         TransitionOut();
-        Debug.Log(SceneManager.GetActiveScene());
     }
 
     public void PerformLoadNextLeveScene() 
@@ -38,9 +37,10 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadNextScene() 
     {
-
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextLevelScene = sceneIndex + 1;
+        
+        if(nextLevelScene > SceneManager.sceneCountInBuildSettings) return;
         SceneManager.LoadSceneAsync(nextLevelScene,LoadSceneMode.Single);
 
 
@@ -48,7 +48,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadLevelSelectScene() 
     {
-        int LevelSelecSceneIndex = 0;
+        int LevelSelecSceneIndex = 1;
         SceneManager.LoadSceneAsync(LevelSelecSceneIndex,LoadSceneMode.Single);
 
     }

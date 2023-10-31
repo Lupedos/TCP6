@@ -12,9 +12,7 @@ public class LevelController : MonoBehaviour
 {
     private bool DiagnosticoCorretoContaminado = false;
     private FichaController fichaController;
-
     [SerializeField] private Button button_finalizarExpediente;
-    [SerializeField] private SceneLoader sceneLoader;
     private List<IObjective> objectiveMinigames = new();
     private IObjective fichaObjective; 
     public event Action LevelComplete = delegate {};
@@ -69,8 +67,6 @@ public class LevelController : MonoBehaviour
         {
             objectiveMinigames.Add(minigame.GetComponent<IObjective>());
         }
-
-        
     }
     
 

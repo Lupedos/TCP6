@@ -1,5 +1,5 @@
 using DG.Tweening;
-using Game.Table;
+using Game;
 using System;
 using UnityEngine;
 using UnityEngine.UI;

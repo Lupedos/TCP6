@@ -42,12 +42,20 @@ public class DialogoScript : MonoBehaviour
 
     public void IniciarDialogoFinalCerto() 
     {
+        ganhou = true;
+        final = true;
+        InicioDialogo(dialogosFinalCerto);
+
         DialogoIniciou?.Invoke();
 
     }
 
     public void IniciarDialogoFinalErrado() 
     {
+        ganhou = false;
+        final = true;
+        InicioDialogo(dialogosFinalErrado);
+
         DialogoIniciou?.Invoke();
 
     }

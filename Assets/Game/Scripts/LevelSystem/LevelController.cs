@@ -10,16 +10,25 @@ using UnityEngine.UI;
 /// </summary>
 public class LevelController : MonoBehaviour
 {
+    private bool DiagnosticoCorretoContaminado = false;
+    private FichaController fichaController;
+
     [SerializeField] private Button button_finalizarExpediente;
     private List<IObjective> objectiveMinigames = new();
     private IObjective fichaObjective; 
     public event Action LevelComplete = delegate {};
+
+    public bool DiagnosticoEstaCorreto() 
+    {
+        return fichaController.JogadorEscolheuContaminado == DiagnosticoCorretoContaminado;
+    }
 
 
     void Start()
     {
         FindObjectiveMinigames();
         fichaObjective = FindObjectOfType<FichaController>().GetComponent<IObjective>();
+        fichaController = FindObjectOfType<FichaController>();
 
         foreach(IObjective iObjective in objectiveMinigames) {
             iObjective.OnComplete += AnyObjectiveComplete;
@@ -36,7 +45,7 @@ public class LevelController : MonoBehaviour
 
     void OnDestroy()
     {
-                foreach(IObjective iObjective in objectiveMinigames) {
+        foreach(IObjective iObjective in objectiveMinigames) {
             iObjective.OnComplete -= AnyObjectiveComplete;
         }
         fichaObjective.OnComplete -= AnyObjectiveComplete;

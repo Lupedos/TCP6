@@ -5,7 +5,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(ToggleGroup))]
 public class FichaController : MonoBehaviour, IObjective
 {
-    public bool IsContaminado = false;
+    public bool JogadorEscolheuContaminado = false;
     private ToggleGroup toggleGroup;
     [SerializeField] private Toggle toggleContaminado;
     [SerializeField] private Toggle toggleNaoContaminado;
@@ -39,7 +39,7 @@ public class FichaController : MonoBehaviour, IObjective
 
     private void OnNaoContaminadoChange(bool value)
     {       
-        if(value) IsContaminado = false;
+        if(value) JogadorEscolheuContaminado = false;
         if(!Complete) SetComplete();
 
 
@@ -48,7 +48,7 @@ public class FichaController : MonoBehaviour, IObjective
 
     private void OnContaminadoChange(bool value)
     {
-        if(value)  IsContaminado = true;
+        if(value)  JogadorEscolheuContaminado = true;
         if(!Complete) SetComplete();
 
     }

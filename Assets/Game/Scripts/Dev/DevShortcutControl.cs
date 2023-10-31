@@ -27,6 +27,7 @@ public class DevShortcutControl : MonoBehaviour
             TableController tableController = FindObjectOfType<TableController>();
             Debug.Log("mesa está ligada?: "+ tableController.IsActive);
         }
+        
     }
 
     void OnGUI()

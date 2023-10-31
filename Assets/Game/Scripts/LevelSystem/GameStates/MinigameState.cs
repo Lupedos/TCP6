@@ -16,7 +16,6 @@ public class MinigameState : State
     public override void StateStart()
     {
         tableController.SetActive(true);
-        Debug.Log(tableController.IsActive);
     }
 
     public override void StateUpdate()

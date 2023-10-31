@@ -265,7 +265,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &1932999379479607180
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e8911867998b8d4b8bb0baa1ec4d9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsContaminado: 0
+  JogadorEscolheuContaminado: 0
   toggleContaminado: {fileID: 6325492695185198617}
   toggleNaoContaminado: {fileID: 3857818276519080106}
 --- !u!114 &9113031186524044948
@@ -744,7 +744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &4375400549885753135
 GameObject:
   m_ObjectHideFlags: 0

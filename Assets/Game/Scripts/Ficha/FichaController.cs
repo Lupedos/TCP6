@@ -40,7 +40,10 @@ public class FichaController : MonoBehaviour, IObjective
     private void OnNaoContaminadoChange(bool value)
     {       
         if(value) JogadorEscolheuContaminado = false;
-        if(!Complete) SetComplete();
+        if(Complete) return;
+        
+        SetComplete();
+        toggleGroup.allowSwitchOff = false;
 
 
     }
@@ -49,7 +52,9 @@ public class FichaController : MonoBehaviour, IObjective
     private void OnContaminadoChange(bool value)
     {
         if(value)  JogadorEscolheuContaminado = true;
-        if(!Complete) SetComplete();
+        if(Complete) return;
+        SetComplete();
+        toggleGroup.allowSwitchOff = false;
 
     }
 

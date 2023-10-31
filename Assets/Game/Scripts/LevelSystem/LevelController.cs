@@ -91,7 +91,6 @@ public class LevelController : MonoBehaviour
     }
 
     public void AnyObjectiveComplete() {
-        Debug.Log("algo mudou");
         if(EveryObjectiveComplete()) 
         {
             FinishMinigames();

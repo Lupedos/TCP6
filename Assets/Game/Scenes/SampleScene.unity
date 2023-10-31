@@ -123,6 +123,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &343972524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 343972527}
+  - component: {fileID: 343972526}
+  - component: {fileID: 343972525}
+  m_Layer: 5
+  m_Name: DialogoCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!225 &343972525
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343972524}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!222 &343972526
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343972524}
+  m_CullTransparentMesh: 1
+--- !u!224 &343972527
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343972524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 459253380}
+  - {fileID: 481525473}
+  - {fileID: 1896338662}
+  - {fileID: 1315953742}
+  m_Father: {fileID: 539552324}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -8.58313, y: -25.158188}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &459253379
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,11 +214,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 539552324}
+  m_Father: {fileID: 343972527}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 14.061478}
+  m_AnchoredPosition: {x: 8.58313, y: 39.219666}
   m_SizeDelta: {x: 100, y: 292.5342}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &459253381
@@ -209,9 +270,8 @@ GameObject:
   - component: {fileID: 481525473}
   - component: {fileID: 481525475}
   - component: {fileID: 481525474}
-  - component: {fileID: 481525476}
   m_Layer: 5
-  m_Name: Caixa de texto
+  m_Name: Caixa de texto Medica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,13 +288,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1315953742}
-  m_Father: {fileID: 539552324}
+  m_Children: []
+  m_Father: {fileID: 343972527}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22.803, y: -138.59999}
+  m_AnchoredPosition: {x: 31.38613, y: -113.4418}
   m_SizeDelta: {x: 665.7002, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &481525474
@@ -250,7 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9716981, g: 0.4711819, b: 0.4711819, a: 1}
+  m_Color: {r: 0, g: 0.18518543, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -275,18 +334,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481525472}
   m_CullTransparentMesh: 1
---- !u!225 &481525476
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481525472}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &539552319
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,17 +368,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogos:
-  - Fala meu cria!
-  - Venho falar que tenho problema.
-  - dasjoifusiofhsioufjiosfjiodsjofjdsiojsdiojfoisjfiosdujoifjiodsjdsfjsdjfiosdjfiosdjfiosdjfiojsdiofjsdiofjdsiojfiosjdfoijsdofjsdojfosdjfojsdoifsdiofjsodifjiosdjfiosdjfiodsoifjo!
-  - 'Sera que vai  bugar ? '
+  - Bom dia, com o que posso ajudar?
+  - "Bom dia! Fazem 4 semanas que n\xE3o paro de ter o mesmo tipo de tosse parox\xEDstica,
+    ou seja, s\xFAbitas e violentas. Aguardei e me automediquei, mas nada fazia passar,
+    estou preocupada que seja tuberculose."
+  - "T\xE1. J\xE1 que s\xF3 est\xE1 sentindo este sintoma, me diga: voc\xEA se encaixa
+    em algum destes fatores de risco? \u2018Mora em local aglomerado e fechado? \xC9
+    fumante de tabaco? E \xE9 da \xE1rea de sa\xFAde?"
+  - "N\xE3o me encaixo em nenhum destes fatores."
+  dialogosFinalCerto:
+  - "Muito bem observado estagi\xE1ria(o)! Continue assim"
+  dialogosFinalErrado:
+  - "N\xE3o est\xE1 certa a sua escolha!"
+  - "Este paciente n\xE3o est\xE1 contaminado, por que este tipo de tosse chamada
+    parox\xEDstica n\xE3o se encaixa em um sintoma comum da tuberculose."
+  - "Preste aten\xE7\xE3o nos pr\xF3ximos pacientes!"
+  ganhou: 0
   passiente: {fileID: 459253381}
+  balao:
+  - {fileID: 481525474}
+  - {fileID: 1896338664}
   dialogoIndex: 0
   texto: {fileID: 1315953740}
   inicioConversa: 0
   audios: []
   conversando: 1
-  myTextUI: {fileID: 481525476}
+  final: 0
+  myTextUI: {fileID: 343972525}
+  h: 0
 --- !u!114 &539552321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,8 +471,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 459253380}
-  - {fileID: 481525473}
+  - {fileID: 343972527}
   - {fileID: 1590391795}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -424,7 +487,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539552319}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82bb97e41a5245746bc15a25aedf7750, type: 3}
   m_Name: 
@@ -949,11 +1012,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 481525473}
+  m_Father: {fileID: 343972527}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0010089874, y: 0}
+  m_AnchoredPosition: {x: 31.38513, y: -113.4418}
   m_SizeDelta: {x: 665.7, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1590391791
@@ -1046,6 +1109,81 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000030518, y: 2.2}
   m_SizeDelta: {x: 880.4, y: 381.6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1896338661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1896338662}
+  - component: {fileID: 1896338663}
+  - component: {fileID: 1896338664}
+  m_Layer: 5
+  m_Name: Caixa de texto Paciente
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1896338662
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896338661}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 343972527}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 31.38613, y: -113.4418}
+  m_SizeDelta: {x: 665.7002, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1896338663
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896338661}
+  m_CullTransparentMesh: 1
+--- !u!114 &1896338664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896338661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9716981, g: 0.4711819, b: 0.4711819, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1961656113
 GameObject:
   m_ObjectHideFlags: 0

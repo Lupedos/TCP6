@@ -14,6 +14,7 @@ public class LevelController : MonoBehaviour
     private FichaController fichaController;
 
     [SerializeField] private Button button_finalizarExpediente;
+    [SerializeField] private SceneLoader sceneLoader;
     private List<IObjective> objectiveMinigames = new();
     private IObjective fichaObjective; 
     public event Action LevelComplete = delegate {};

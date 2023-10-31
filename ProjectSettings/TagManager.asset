@@ -50,6 +50,9 @@ TagManager:
   - name: Table
     uniqueID: 2292821307
     locked: 0
+  - name: Dialog
+    uniqueID: 3834638831
+    locked: 0
   - name: UI
     uniqueID: 4098789451
     locked: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class GameStateController : StateController
     [SerializeField] private List<State> statesOrdered;
 
     private int CurrentStateIndex => statesOrdered.IndexOf(CurrentState);
+    public event Action FinishGameState = delegate {};
     public bool IsLastState() 
     {
         return CurrentStateIndex == (statesOrdered.Count - 1);
@@ -15,7 +17,7 @@ public class GameStateController : StateController
     void Start()
     {
         // if(statesOrdered == null) return;
-        CurrentState = statesOrdered[0];
+        SetState(statesOrdered[0]);
     }
 
 
@@ -24,8 +26,12 @@ public class GameStateController : StateController
     public void NextState() 
     {
         Debug.Log("Next state");
-        if(IsLastState()) return;
-        CurrentState = statesOrdered[CurrentStateIndex + 1];
+        if(IsLastState()) 
+        {
+            FinishGameState?.Invoke();
+            return;
+        }
+        SetState(statesOrdered[CurrentStateIndex + 1]);
     }
 
 

@@ -10,11 +10,13 @@ public class MinigameState : State
     void Start()
     {
         tableController = FindObjectOfType<TableController>();
+        tableController.SetActive(false);
     }
     
     public override void StateStart()
     {
         tableController.SetActive(true);
+        Debug.Log(tableController.IsActive);
     }
 
     public override void StateUpdate()

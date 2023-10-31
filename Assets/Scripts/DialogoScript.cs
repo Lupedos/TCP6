@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -25,6 +24,8 @@ public class DialogoScript : MonoBehaviour
     private bool fadeOut = false;
     public bool h = false; 
 
+    [Space(20)]
+    public UnityEvent DialogoIniciou;
     public UnityEvent DialogoTerminou;
     
     void Start()
@@ -35,13 +36,28 @@ public class DialogoScript : MonoBehaviour
 
     public void IniciarDialogoInicial() 
     {
+        DialogoIniciou?.Invoke();
         InicioDialogo(dialogos);
+    }
+
+    public void IniciarDialogoFinalCerto() 
+    {
+        DialogoIniciou?.Invoke();
+
+    }
+
+    public void IniciarDialogoFinalErrado() 
+    {
+        DialogoIniciou?.Invoke();
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
+
+        
         if(Input.GetButtonDown("Fire1") && conversando)
         {
             if(!inicioConversa)
@@ -78,6 +94,7 @@ public class DialogoScript : MonoBehaviour
             }
         }
         
+
         if(fadeIn)
         {
             if( myTextUI.alpha < 1)

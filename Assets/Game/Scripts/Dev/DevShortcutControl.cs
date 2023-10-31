@@ -1,7 +1,7 @@
 
 #if UNITY_EDITOR
-using System.Collections;
-using System.Collections.Generic;
+using Game.Table;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -17,11 +17,16 @@ public class DevShortcutControl : MonoBehaviour
         gameStateController = FindObjectOfType<GameStateController>();
     }
 
+
     void Update()
     {
         if(!enabled) return;
         if(Input.GetKeyDown(KeyCode.Alpha1)) { levelController?.FinishMinigames(); }
 
+        if(Input.GetKeyDown(KeyCode.Alpha2)) {
+            TableController tableController = FindObjectOfType<TableController>();
+            Debug.Log("mesa está ligada?: "+ tableController.IsActive);
+        }
     }
 
     void OnGUI()

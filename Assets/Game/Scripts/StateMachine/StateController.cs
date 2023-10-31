@@ -16,7 +16,7 @@ using UnityEngine;
 
     
         public void SetState(State state) {
-            CurrentState.StateExit();
+            CurrentState?.StateExit();
             CurrentState = state;
             StateUpdate.Invoke(state);
             CurrentState.StateStart();

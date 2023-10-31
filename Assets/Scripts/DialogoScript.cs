@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class DialogoScript : MonoBehaviour
 {
@@ -23,11 +24,20 @@ public class DialogoScript : MonoBehaviour
     private bool fadeIn = false;
     private bool fadeOut = false;
     public bool h = false; 
+
+    public UnityEvent DialogoTerminou;
+    
     void Start()
     {
         inicioConversa = false; 
         fadeOut = true; 
     }
+
+    public void IniciarDialogoInicial() 
+    {
+        InicioDialogo(dialogos);
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -36,28 +46,31 @@ public class DialogoScript : MonoBehaviour
         {
             if(!inicioConversa)
             {
-                InicioDialogo(dialogos);
+                IniciarDialogoInicial();
             }
             else if (texto.text == dialogos[dialogoIndex] && conversando)
             {
                 proximoDialogo(dialogos);
             }
+        
         }
+
         if(final && ganhou)
         {
             if(!inicioConversa)
             InicioDialogo(dialogosFinalCerto);
+
 
             if(Input.GetButtonDown("Fire1") && texto.text == dialogosFinalCerto[dialogoIndex])
             {
                 proximoDialogo(dialogosFinalCerto);
             }
 
+
         }
         else  if(final && ganhou == false)
         {
-            if(!inicioConversa)
-            InicioDialogo(dialogosFinalErrado);
+            if(!inicioConversa) InicioDialogo(dialogosFinalErrado);
 
             if(Input.GetButtonDown("Fire1") && texto.text == dialogosFinalErrado[dialogoIndex])
             {
@@ -99,8 +112,10 @@ public class DialogoScript : MonoBehaviour
         dialogoIndex = 0;
         StartCoroutine(MostrarDialogo(mensagem));
         inicioConversa = true;
+        conversando = true;
         passiente.gameObject.SetActive(true);
         fadeIn = true;
+        
     }
 
     void proximoDialogo(string[] mensagem)
@@ -121,6 +136,8 @@ public class DialogoScript : MonoBehaviour
             final = false;
             balao[0].gameObject.SetActive(true);
             balao[1].gameObject.SetActive(false);  
+            DialogoTerminou?.Invoke();
+
         }
     }
 
@@ -137,7 +154,7 @@ public class DialogoScript : MonoBehaviour
             balao[1].gameObject.SetActive(h);
             h = !h;
         }
-       
+
         //Botar audio play aqui
         foreach (char letter in mensagem[dialogoIndex])
         {   

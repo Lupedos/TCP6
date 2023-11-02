@@ -14,7 +14,7 @@ public class SaveLoad : MonoBehaviour
         if (PlayerPrefs.HasKey("LevelReleased"))
             return PlayerPrefs.GetInt("LevelReleased");
 
-        else return 5;
+        else return 3;
     }
 
 

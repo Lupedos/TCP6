@@ -6,22 +6,20 @@ using UnityEngine.UI;
 
 public class LevelSelectController : MonoBehaviour
 {
-    private List<Button> levelSelectButtons;
+    private List<LevelSelectButton> levelSelectButtons;
 
-
-    private List<Button> FindButtonsChilds()
+    private List<LevelSelectButton> FindButtonsChilds()
     {
-        return GetComponentsInChildren<Button>().ToList();
+        return GetComponentsInChildren<LevelSelectButton>().ToList();
     }
 
     private void Start()
     {
         levelSelectButtons = FindButtonsChilds();
+        levelSelectButtons.TrimExcess();
+
         LiberarLevelsDesbloqueados();
     }
-
-
-
 
 
     private void LiberarLevelsDesbloqueados()
@@ -29,13 +27,15 @@ public class LevelSelectController : MonoBehaviour
 
         for (int i = 0; i < levelSelectButtons.Count; i++)
         {
+            levelSelectButtons[i].SetLevelNumber(i + 1);
+            
             if(i < SaveLoad.GetLevelReleased())
             {
-                levelSelectButtons[i].interactable = true;
+                levelSelectButtons[i].SetActive(true);
 
             } else
             {
-                levelSelectButtons[i].interactable = false;
+                levelSelectButtons[i].SetActive(false);
 
             }
         }

@@ -1382,6 +1382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3310347199195579879}
   - component: {fileID: 1318619832892918088}
+  - component: {fileID: 4542069293099261460}
   m_Layer: 5
   m_Name: LevelSelect Buttons
   m_TagString: Untagged
@@ -1437,6 +1438,18 @@ MonoBehaviour:
   m_Spacing: {x: 34.96, y: 1.15}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &4542069293099261460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948277293159648154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472b653442713f14da7d2ee922dce785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7682550084303367615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,7 +1769,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -196177845
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &7324895081297012603

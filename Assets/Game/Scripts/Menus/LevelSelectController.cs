@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class LevelSelectController : MonoBehaviour
 {
-    public int levelLiberado = 2;
     private List<Button> levelSelectButtons;
 
 
@@ -30,7 +29,7 @@ public class LevelSelectController : MonoBehaviour
 
         for (int i = 0; i < levelSelectButtons.Count; i++)
         {
-            if(i < levelLiberado)
+            if(i < SaveLoad.GetLevelReleased())
             {
                 levelSelectButtons[i].interactable = true;
 

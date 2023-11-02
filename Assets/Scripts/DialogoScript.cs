@@ -140,6 +140,7 @@ public class DialogoScript : MonoBehaviour
         conversando = true;
         passiente.gameObject.SetActive(true);
         fadeIn = true;
+        fadeOut = false;
         
     }
 

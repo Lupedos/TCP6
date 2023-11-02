@@ -4,7 +4,8 @@ using Game.Table;
 using Game.UI;
 using UnityEngine;
 
-public class TableObjectInterface : MonoBehaviour, IViewable
+[RequireComponent(typeof(CanvasGroup))]
+public class ObjectInterface : MonoBehaviour, IViewable
 {
     private TableController tableController;
     [SerializeField] private ViewEventProps eventProps;

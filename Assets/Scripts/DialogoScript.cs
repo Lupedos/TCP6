@@ -10,7 +10,7 @@ public class DialogoScript : MonoBehaviour
     public string[] dialogosFinalCerto;
     public string[] dialogosFinalErrado;
     public bool ganhou;
-    public Image passiente;
+    public Image[] pessoa;
     public Image[] balao;
     public int dialogoIndex;
     public TextMeshProUGUI texto;
@@ -31,7 +31,8 @@ public class DialogoScript : MonoBehaviour
     void Start()
     {
         inicioConversa = false; 
-        fadeOut = true; 
+        fadeOut = true;
+        pessoa[1].gameObject.SetActive(false); 
     }
 
     public void IniciarDialogoInicial() 
@@ -138,7 +139,14 @@ public class DialogoScript : MonoBehaviour
         StartCoroutine(MostrarDialogo(mensagem));
         inicioConversa = true;
         conversando = true;
-        passiente.gameObject.SetActive(true);
+        if(final)
+        {
+            pessoa[1].gameObject.SetActive(true);
+        }
+        else
+        {
+            pessoa[0].gameObject.SetActive(true);
+        }
         fadeIn = true;
         fadeOut = false;
         
@@ -156,7 +164,14 @@ public class DialogoScript : MonoBehaviour
         {
             dialogoIndex = 0;
             inicioConversa = false;
-            passiente.gameObject.SetActive(false);
+            if(final)
+            {
+                pessoa[1].gameObject.SetActive(false);
+            }
+            else
+            {
+                pessoa[0].gameObject.SetActive(false);
+            }
             conversando = false;
             fadeOut = true;
             final = false;

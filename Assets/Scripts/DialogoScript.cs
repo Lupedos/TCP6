@@ -187,7 +187,7 @@ public class DialogoScript : MonoBehaviour
     {
         texto.text = "";
         bool pular = false;
-        if(conversando)
+        if(conversando && !final)
         {
             h = !h;
             balao[0].gameObject.SetActive(h);

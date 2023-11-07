@@ -4,36 +4,47 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(AudioSource))]
-public class ClickablePointController : MonoBehaviour, IClickableInterfaceEvents
+public class ClickablePointController : MonoBehaviour
 {
     private ClickablePoint[] clicablePoints;
     private IObjective iObjective;
     private int correntClickCount = 0;
     private int wrongClickCount = 0;
 
-    public event Action<int> CorrectClick;
-    public event Action<int> WrongClick;
+    public event Action<int> OnClick;
     public event Action OnGotThemAllRight;
     public event Action OnTryedAllPoints;
-    
 
     private int TotalClick => correntClickCount + wrongClickCount;
     public bool TryedAllPoints => (TotalClick == clicablePoints.Length);
-    //acertou todos ja?
-    public bool GotThemAllRight => (GetCorrectPointCount() == correntClickCount);
+    //Marcou todos corretamente:
+    /// <summary>
+    /// Marcou todos corretamente?
+    /// </summary>
+    public bool GotThemAllRight
+    {
+        get
+        {
+            if (wrongClickCount > 0) return false;
+            return (GetMarkedCorrectPointCount() == correntClickCount);
+        }
+    }
 
     void Awake()
     {
         iObjective = GetComponent<IObjective>();
-        clicablePoints = GetComponentsInChildren<ClickablePoint>();
 
     }
 
-    private void Start()
+    public void Initialize()
     {
-
+        clicablePoints = GetComponentsInChildren<ClickablePoint>();
         SubscribeOnClickPoints();
+    }
 
+    public void OnDestroy()
+    {
+        UnsubscribeOnClickPoints();
     }
 
 
@@ -45,49 +56,63 @@ public class ClickablePointController : MonoBehaviour, IClickableInterfaceEvents
             point.AttemptResult += OnClickPointAttemptResult;
         }
     }
+    public void UnsubscribeOnClickPoints()
+    {
+        foreach (var point in clicablePoints)
+        {
+            point.AttemptResult -= OnClickPointAttemptResult;
+        }
+    }
 
-    public int GetCorrectPointCount()
+
+
+
+
+    private void OnClickPointAttemptResult(ClickablePoint point)
+    {
+        OnClick?.Invoke(GetClickablePointMarked());
+        UpdateCorrectAndWrongCount();
+
+    }
+
+
+    public int GetMarkedCorrectPointCount()
     {
         return (from point in clicablePoints
                 where point.IsCorret
                 select point).Count();
     }
-
-    private void OnClickPointAttemptResult(ClickablePoint point)
+    public int GetmarkedWrongPointCount()
     {
-        if (point.IsCorret)
+        return (from point in clicablePoints
+                where !point.IsCorret
+                select point).Count();
+    }
+    public int GetClickablePointMarked()
+    {
+        int count = 0;
+        foreach(var point in clicablePoints)
         {
-            correntClickCount++;
-            CorrectClick?.Invoke(correntClickCount);
+            if(point.marked) count++;
         }
-        else
+        return count;
+    }
+
+    private void UpdateCorrectAndWrongCount()
+    {
+        correntClickCount = 0;
+        wrongClickCount = 0;
+        foreach(var point in clicablePoints)
         {
-            wrongClickCount++;
-            WrongClick?.Invoke(wrongClickCount);
+            if (!point.marked) continue;
+            if (point.IsCorret) correntClickCount++;
+            if (!point.IsCorret) wrongClickCount++;
+
         }
-        UnsubscribeOnClickPoint(point);
-        if (GotThemAllRight) OnGotThemAllRight?.Invoke();
-        if (TryedAllPoints) OnTryedAllPoints?.Invoke();
-
-
     }
 
 
-    private void UnsubscribeOnClickPoint(ClickablePoint point)
-    {
-        point.AttemptResult -= OnClickPointAttemptResult;
 
-    }
-
-    public void Subscription()
-    {
-        
-    }
-
-    public void Unsubscription()
-    {
-
-    }
 }
 
 

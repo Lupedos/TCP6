@@ -114,26 +114,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4617293941695338557}
     m_Modifications:
-    - target: {fileID: 1385126905254567606, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
-      propertyPath: m_Name
-      value: APARGAR_Text_wrongCount
-      objectReference: {fileID: 0}
-    - target: {fileID: 1385126905254567606, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1398357224161320533, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
-      propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1398357224161320533, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1398357224161320533, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
-      propertyPath: m_BlocksRaycasts
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1687753086149748502, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
       propertyPath: m_Name
       value: Microscopio UI
@@ -164,11 +144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1942621796201380158, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -0.0050049
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1942621796201380158, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -0.39
+      value: -0.19458
       objectReference: {fileID: 0}
     - target: {fileID: 1942621796201380158, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -200,11 +180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1942621796201380158, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0024414062
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1942621796201380158, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.09777832
       objectReference: {fileID: 0}
     - target: {fileID: 1942621796201380158, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -379,6 +359,10 @@ PrefabInstance:
     - target: {fileID: 6391253773723635597, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 5.903015
+      objectReference: {fileID: 0}
+    - target: {fileID: 6766652835485517585, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 116.19998
       objectReference: {fileID: 0}
     - target: {fileID: 8265113525358286950, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
       propertyPath: m_Pivot.x
@@ -1577,6 +1561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Seringa UI
       objectReference: {fileID: 0}
+    - target: {fileID: 4738975721165812455, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: machucadoImage
+      value: 
+      objectReference: {fileID: 2495524701351975489}
     - target: {fileID: 6170762882928409731, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1657,6 +1645,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8183645396231870429, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1667,3 +1659,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6170762882928409731, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
   m_PrefabInstance: {fileID: 5995351443180440988}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2495524701351975489 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8183645396231870429, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+  m_PrefabInstance: {fileID: 5995351443180440988}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

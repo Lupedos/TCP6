@@ -27,6 +27,12 @@ public class DevShortcutControl : MonoBehaviour
             TableController tableController = FindObjectOfType<TableController>();
             Debug.Log("mesa está ligada?: "+ tableController.IsActive);
         }
+
+        if(Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            MicroscopioMinigame microscopio = FindObjectOfType<MicroscopioMinigame>();
+            Debug.Log("marcou tudo certinho: "+microscopio.ClickablePointController.GotThemAllRight);
+        }
         
     }
 

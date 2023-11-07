@@ -1,14 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class SeringaForceState : State
 {    
     // private SeringaAnimationState currectAnimation = SeringaAnimationState.STANDBY;
     [SerializeField] private SeringaMinigameController seringaController;
     private State directionState;
+    [SerializeField] private Image machucadoImage;
     private void Start()
     { 
         directionState = GetComponent<SeringaDirectionState>();
@@ -55,9 +57,14 @@ public class SeringaForceState : State
         seringaController.SeringaObject.DOLocalMove(seringaObjectTargetPos, 1);
         seringaController.SetMessage("Muito bem");
         seringaController.PrecisionClick.SetActive(false);
+        
         yield return new WaitForSeconds(1);
         seringaController.SetComplete();
+        seringaController.SeringaObject.GetComponent<Image>().DOFade(0, 1).OnComplete(() =>
+        {
+            machucadoImage.DOFade(1, 1).SetEase(Ease.OutCirc);
 
+        });
         seringaController.SeringaObjectViewable.SetActive(false);
 
     }
@@ -70,6 +77,8 @@ public class SeringaForceState : State
         stateController.SetState(directionState);
 
     }
+
+
 
 
 }

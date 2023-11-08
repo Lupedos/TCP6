@@ -11,8 +11,10 @@ public class LevelSelectButton : MonoBehaviour, IActivable
 
     [SerializeField] private TMP_Text text_button;
     [SerializeField] private Image image;
+    [SerializeField] private GameObject levelCompletedMarkup;
     private Button button;
-    public bool IsActive {get; private set;}
+
+    public bool IsActive { get; private set; }
 
     public event Action<bool> Activate;
 
@@ -31,6 +33,12 @@ public class LevelSelectButton : MonoBehaviour, IActivable
     {
         Activate += OnActivate;
         button.onClick.AddListener(LoadLevelOfButtonNumber);
+
+        SetLevelNumber(levelNumber);
+
+        CheckLevelReleased();
+        CheckLevelCompleted();
+
     }
 
     private void OnDestroy()
@@ -46,20 +54,12 @@ public class LevelSelectButton : MonoBehaviour, IActivable
         text_button.SetText(levelNumber.ToString());
     }
 
+    //quando muda a atividade do objeto
     private void OnActivate(bool value)
     {
-        if(value)
-        {
-            text_button.enabled = true;
-            image.enabled = (false);
-            button.interactable = true;
-        }
-        else
-        {
-            text_button.enabled = (false);
-            image.enabled = (true);
-            button.interactable = false;
-        }
+        text_button.enabled = value;
+        image.enabled = !false;
+        button.interactable = value;
     }
 
 
@@ -68,6 +68,19 @@ public class LevelSelectButton : MonoBehaviour, IActivable
         int startIndexCenasNiveisMenosUm = 3;
         SceneManager.LoadSceneAsync(levelNumber + startIndexCenasNiveisMenosUm);
 
+    }
+
+
+    public void CheckLevelReleased()
+    {
+        bool isLevelReleased = SaveLoad.GetLevelCompleted()+1 >= levelNumber;
+        SetActive(isLevelReleased);
+    }
+
+    public void CheckLevelCompleted()
+    {
+        bool isLevelCompleted = (SaveLoad.GetLevelCompleted() >= levelNumber);
+        levelCompletedMarkup.SetActive(isLevelCompleted);
     }
 
 

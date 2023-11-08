@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+
+using UnityEngine.SceneManagement;
 
 public class EndLevelState : State
 {
@@ -14,6 +13,9 @@ public class EndLevelState : State
     
     public override void StateStart()
     {
+        int sceneIndex  = SceneManager.GetActiveScene().buildIndex;
+
+        SaveLoad.SaveLevelCompleted(sceneIndex - 3);
         sceneLoader.LoadLevelSelectScene();
 
     }

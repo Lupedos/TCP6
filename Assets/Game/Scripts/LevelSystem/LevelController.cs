@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
@@ -16,7 +18,7 @@ public class LevelController : MonoBehaviour
     private List<IObjective> objectiveMinigames = new();
     private IObjective fichaObjective; 
     public event Action LevelComplete = delegate {};
-
+    [SerializeField] private TMP_Text text_Dia;
     public bool DiagnosticoEstaCorreto() 
     {
         return fichaController.JogadorEscolheuContaminado == DiagnosticoCorretoContaminado;
@@ -46,8 +48,14 @@ public class LevelController : MonoBehaviour
         button_finalizarExpediente.gameObject.SetActive(false);
 
 
+        SetDiaText();
+
     }
 
+    private void SetDiaText()
+    {
+        text_Dia.SetText("Dia " + (SceneManager.GetActiveScene().buildIndex - 3));
+    }
 
     void OnDestroy()
     {

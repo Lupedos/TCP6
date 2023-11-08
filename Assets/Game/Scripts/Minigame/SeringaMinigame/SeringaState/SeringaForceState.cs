@@ -1,14 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class SeringaForceState : State
 {    
     // private SeringaAnimationState currectAnimation = SeringaAnimationState.STANDBY;
     [SerializeField] private SeringaMinigameController seringaController;
     private State directionState;
+    [SerializeField] private Image machucadoImage;
+    [SerializeField] private AudioClip correctClickClip;
+    [SerializeField] private AudioClip wrongClickClip;
     private void Start()
     { 
         directionState = GetComponent<SeringaDirectionState>();
@@ -22,6 +26,7 @@ public class SeringaForceState : State
 
         seringaController.PrecisionClick.SetActive(true);
         seringaController.PrecisionClick.IsClickOnRange += IsClickOnRange;
+        seringaController.PrecisionClick.SetHardConfig();
 
     }
 
@@ -51,25 +56,34 @@ public class SeringaForceState : State
 
     private IEnumerator CorrectClickAnim() 
     {
+        SoundEffectPlayerManager.Instance.PlaySfx(correctClickClip);
+
         Vector3 seringaObjectTargetPos = seringaController.SeringaObject.transform.rotation*Vector3.up*8;
         seringaController.SeringaObject.DOLocalMove(seringaObjectTargetPos, 1);
         seringaController.SetMessage("Muito bem");
         seringaController.PrecisionClick.SetActive(false);
+        
         yield return new WaitForSeconds(1);
         seringaController.SetComplete();
+        seringaController.SeringaObject.GetComponent<Image>().DOFade(0, 1).OnComplete(() =>
+        {
+            machucadoImage.DOFade(1, 1).SetEase(Ease.OutCirc);
 
+        });
         seringaController.SeringaObjectViewable.SetActive(false);
 
     }
 
     private IEnumerator WrongClickAnim() 
     {
-
+        SoundEffectPlayerManager.Instance.PlaySfx(wrongClickClip);
         seringaController.PrecisionClick.SetActive(false);
         yield return new WaitForSeconds(1);
         stateController.SetState(directionState);
 
     }
+
+
 
 
 }

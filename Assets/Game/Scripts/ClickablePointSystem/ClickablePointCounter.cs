@@ -12,27 +12,26 @@ public class ClickablePointCounter : MonoBehaviour
 
     private void Start()
     {
-        clickablePointController.CorrectClick += SetCorretCount;
-        clickablePointController.WrongClick += SetWrongCount;
+        clickablePointController.OnClick += SetCurrentMarkedCount;
 
     }
 
     private void OnDestroy()
     {
-        clickablePointController.CorrectClick -= SetCorretCount;
-        clickablePointController.WrongClick -= SetWrongCount;
-
+        clickablePointController.OnClick -= SetCurrentMarkedCount;
     }
 
-    public void SetCorretCount(int corretCount)
+    public void SetCurrentMarkedCount(int markedCount)
     {
-        text_CorrectCounter.SetText(corretCount.ToString());
+        text_CorrectCounter.SetText(markedCount.ToString());
     }
 
     public void SetWrongCount(int wrongCount)
     {
         text_WrongCounter.SetText(wrongCount.ToString());
     }
+
+
 
 
 }

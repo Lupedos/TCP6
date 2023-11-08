@@ -4,21 +4,20 @@ using UnityEngine.EventSystems;
 
 public class ClickablePoint : MonoBehaviour, IPointerClickHandler
 {
-    private bool isClicked = false;
     [SerializeField] bool isCorrect;
     public event Action<ClickablePoint> AttemptResult;
     public bool IsCorret => isCorrect;
+    public bool marked { get; private set; } = false;
     public void Reset()
     {
-        isClicked = false;
+        marked = false;
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (isClicked) return;
+        marked = !marked;
         //TODO: MOSTRAR
         AttemptResult?.Invoke(this);
-        isClicked = true;
 
     }
 }

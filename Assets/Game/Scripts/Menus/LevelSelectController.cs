@@ -6,41 +6,43 @@ using UnityEngine.UI;
 
 public class LevelSelectController : MonoBehaviour
 {
-    private List<LevelSelectButton> levelSelectButtons;
+    //private List<LevelSelectButton> levelSelectButtons;
 
-    private List<LevelSelectButton> FindButtonsChilds()
-    {
-        return GetComponentsInChildren<LevelSelectButton>().ToList();
-    }
+    //private List<LevelSelectButton> FindButtonsChilds()
+    //{
+    //    return GetComponentsInChildren<LevelSelectButton>().ToList();
+    //}
 
-    private void Start()
-    {
-        levelSelectButtons = FindButtonsChilds();
-        levelSelectButtons.TrimExcess();
+    //private void Start()
+    //{
+    //    levelSelectButtons = FindButtonsChilds();
+    //    Debug.Log(SaveLoad.GetLevelReleased());
+    //    Debug.Log(SaveLoad.GetLevelCompleted());
+    //    LiberarLevelsDesbloqueados();
 
-        LiberarLevelsDesbloqueados();
-    }
+
+    //}
 
 
-    private void LiberarLevelsDesbloqueados()
-    {
+    //private void LiberarLevelsDesbloqueados()
+    //{
 
-        for (int i = 0; i < levelSelectButtons.Count; i++)
-        {
-            levelSelectButtons[i].SetLevelNumber(i + 1);
+    //    for (int i = 0; i < levelSelectButtons.Count; i++)
+    //    {
+    //        levelSelectButtons[i].SetLevelNumber(i + 1);
             
-            if(i < SaveLoad.GetLevelReleased())
-            {
-                levelSelectButtons[i].SetActive(true);
+    //        if((i+1) <= SaveLoad.GetLevelReleased())
+    //        {
+    //            levelSelectButtons[i].SetActive(true);
 
-            } else
-            {
-                levelSelectButtons[i].SetActive(false);
+    //        } else
+    //        {
+    //            levelSelectButtons[i].SetActive(false);
 
-            }
-        }
+    //        }
+    //    }
 
-    }
+    //}
 
 
 

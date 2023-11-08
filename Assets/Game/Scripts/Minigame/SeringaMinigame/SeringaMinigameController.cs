@@ -15,7 +15,6 @@ public class SeringaMinigameController : Minigame
     private SeringaStateController stateController;
 
     IViewable seringaObjectViewable;
-
     public PrecisionClick PrecisionClick { get => precisionClick; private set => precisionClick = value; }
     public Button Button_stop { get => button_stop;private set => button_stop = value; }
     public RectTransform SeringaObject { get => seringaObject;private set => seringaObject = value; }
@@ -44,6 +43,7 @@ public class SeringaMinigameController : Minigame
     {
         if(value) 
         {
+            if (Complete) return;
             stateController.enabled = true;
             stateController.SetState(stateController.directionState);
             PrecisionClick.SetActive(true);

@@ -1,10 +1,5 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using DG.Tweening;
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SeringaDirectionState : State
 {
@@ -13,6 +8,8 @@ public class SeringaDirectionState : State
     [SerializeField] private float xOffset = 0.5f;
     private Vector3 seringaInitPos;
     private SeringaForceState forceState;
+    [SerializeField] private AudioClip correctClickClip;
+    [SerializeField] private AudioClip wrongClickClip;
 
 
     //TODO: para substituir o número 0.5f nas equações la embaixo.
@@ -21,11 +18,13 @@ public class SeringaDirectionState : State
 
     public override void StateStart()
     {
+
         seringaController.SetMessage("Posição.");
         scroolbarMiddlePoint = seringaController.PrecisionClick.Scrollbar.size/2;
         seringaController.PrecisionClick.Scrollbar.onValueChanged.AddListener(OnScrollbarChange);
         seringaController.PrecisionClick.IsClickOnRange += IsClickOnRange;
         seringaController.PrecisionClick.SetActive(true);
+        seringaController.PrecisionClick.SetEasyConfig();
 
     }
 
@@ -86,8 +85,10 @@ public class SeringaDirectionState : State
 
     private Vector3 ForwardDir =>seringaController.SeringaObject.transform.position+seringaController.SeringaObject.transform.rotation*Vector3.up*0.1f;
 
-    private IEnumerator CorrectClickAnim() 
+    private IEnumerator CorrectClickAnim()
     {
+        SoundEffectPlayerManager.Instance.PlaySfx(correctClickClip);
+
         seringaController.PrecisionClick.Scrollbar.onValueChanged.RemoveListener(OnScrollbarChange);
         seringaController.PrecisionClick.SetActive(false);
         // seringaController.SeringaObject.transform.DOMove(
@@ -100,6 +101,7 @@ public class SeringaDirectionState : State
 
     private IEnumerator WrongClickAnim() 
     {
+        SoundEffectPlayerManager.Instance.PlaySfx(wrongClickClip);
         seringaController.PrecisionClick.SetActive(false);
         seringaController.PrecisionClick.Scrollbar.onValueChanged.RemoveListener(OnScrollbarChange);
         yield return new WaitForSeconds(1);

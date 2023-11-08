@@ -10,7 +10,6 @@ public class Minigame : MonoBehaviour, IObjective, IActivable
 
     public void SetComplete() 
     {
-        Debug.Log("set complete minigame: "+gameObject.name);
         Complete = true;
         OnComplete?.Invoke();
     }

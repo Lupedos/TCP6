@@ -58,6 +58,7 @@ MonoBehaviour:
     outEvent:
       duration: 0.5
       interpolationMode: 8
+  type: 3
 --- !u!225 &1398357224161320533
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -555,7 +556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6429169584206963207, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -593.4494
+      value: -593.4493
       objectReference: {fileID: 0}
     - target: {fileID: 6429169584206963207, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
       propertyPath: m_AnchoredPosition.y

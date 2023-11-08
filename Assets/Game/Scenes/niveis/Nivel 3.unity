@@ -454,9 +454,64 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: myTextUI
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: balaoFalaClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: balao.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: balao.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: pessoa.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: pessoa.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: dialogos.Array.data[1]
+      value: "Bom dia! Comecei na primeira semana tendo tosses secas e depois passou
+        a ser produtiva de muco nas 2 semanas seguintes. Ultimamente sinto muita
+        falta de ar e dor no t\xF3rax, desconfiei logo de tuberculose e vim aqui
+        conferir."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: dialogos.Array.data[2]
+      value: "Fez muito bem! Me diga: voc\xEA se encaixa em algum destes fatores
+        de risco? \u2018Mora em local aglomerado e fechado? \xC9 fumante de tabaco?
+        E \xE9 da \xE1rea de sa\xFAde?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: dialogos.Array.data[3]
+      value: "Sou da \xE1rea de sa\xFAde!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: dialogosFinalErrado.Array.data[1]
+      value: "Este paciente est\xE1 contaminado, por que estes sintomas apresentados
+        se encaixam nos sintomas comuns da tuberculose, al\xE9m de que o paciente
+        apresenta fatores de risco da tuberculose."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: DialogoTerminou.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 543912674}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: DialogoTerminou.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextState
+      objectReference: {fileID: 0}
     - target: {fileID: 6590151592783606480, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Camera
       value: 
@@ -898,10 +953,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3661382078785555558, guid: f7f360de6779b01448322c7f59518401, type: 3}
-      propertyPath: tableController
-      value: 
-      objectReference: {fileID: 544841157}
     - target: {fileID: 4518031506479642853, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: dialogoScript
       value: 

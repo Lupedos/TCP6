@@ -37,7 +37,6 @@ namespace Game.Table
 
         private void OnActive(bool activity)
         {
-            Debug.Log("active changed: " + activity + " " + name);
             if (activity) Show();
             else Hide();
         }

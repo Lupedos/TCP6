@@ -1,3 +1,4 @@
+using Game.Table;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ public class FinalFeedbackState : State
 {
     private DialogoScript dialogoScript;
     private LevelController levelController;
-
+    [SerializeField] private TableController tableController;
     void Start()
     {
         dialogoScript = FindObjectOfType<DialogoScript>();
@@ -18,7 +19,7 @@ public class FinalFeedbackState : State
     public override void StateStart()
     {
         dialogoScript.enabled = true;
-
+        tableController.SetActiveAllInterfaces(false);
         MostrarDialogoFinal();
       
       

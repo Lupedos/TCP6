@@ -30,7 +30,6 @@ namespace Game.Table
             {
                 if(tableObject.ObjectType == type)
                 {
-                    Debug.Log(tableObject.name + " changed: " + value);
                     tableObject.SetActive(value);
                 }
             }
@@ -51,6 +50,7 @@ namespace Game.Table
             foreach(ObjectInterface objectInterface in objectsInterfaces)
             {
                 objectInterface.SetActive(value);
+                objectInterface.Hide();
             }
         }
 

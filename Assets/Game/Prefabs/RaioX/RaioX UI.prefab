@@ -798,6 +798,7 @@ MonoBehaviour:
     outEvent:
       duration: 0.5
       interpolationMode: 8
+  type: 4
 --- !u!225 &5861455473080693232
 CanvasGroup:
   m_ObjectHideFlags: 0

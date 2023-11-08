@@ -195,11 +195,11 @@ MonoBehaviour:
   button_Stop: {fileID: 8173161737313773750}
   minSpeed: 2
   easyConfig:
-    speedMultiplier: 1
-    rangeScaleX: 0.5
+    speedMultiplier: 1.5
+    rangeScaleX: 0.2
   hardConfig:
     speedMultiplier: 2
-    rangeScaleX: 0.25
+    rangeScaleX: 0.2
 --- !u!1 &1066357023872447783
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,7 +511,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2857072956815594217}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -534,6 +534,7 @@ MonoBehaviour:
     outEvent:
       duration: 0.5
       interpolationMode: 8
+  type: 2
 --- !u!114 &8892411414927389917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,7 +551,7 @@ MonoBehaviour:
   precisionClick: {fileID: 8552814608024974130}
   button_stop: {fileID: 8173161737313773750}
   seringaObject: {fileID: 7108281719051851080}
-  machucado: {fileID: 5173218725232750735}
+  machucado: {fileID: 1751632827339454321}
 --- !u!114 &1915148176336027806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -832,7 +833,7 @@ RectTransform:
   m_GameObject: {fileID: 4435567737093653622}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7107851885550677105}
@@ -981,7 +982,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5173218725232750735}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 3.3333333}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -989,7 +990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24, y: -101}
+  m_AnchoredPosition: {x: 24, y: -88}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3610073686517428704
@@ -1013,7 +1014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

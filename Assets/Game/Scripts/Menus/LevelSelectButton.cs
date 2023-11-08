@@ -58,7 +58,7 @@ public class LevelSelectButton : MonoBehaviour, IActivable
     private void OnActivate(bool value)
     {
         text_button.enabled = value;
-        image.enabled = !false;
+        image.enabled = !value;
         button.interactable = value;
     }
 

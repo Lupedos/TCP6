@@ -278,7 +278,7 @@ MonoBehaviour:
   dialogoIndex: 0
   texto: {fileID: 4825692085720281124}
   inicioConversa: 0
-  audios: []
+  balaoFalaClip: {fileID: 8300000, guid: 3823e23ac1d6a274aa3f62170493ba48, type: 3}
   conversando: 1
   final: 0
   myTextUI: {fileID: 3529391792006179098}
@@ -440,7 +440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.00012207031, y: 102.709015}
+  m_AnchoredPosition: {x: 0.00048828125, y: 102.709015}
   m_SizeDelta: {x: -0.00024414, y: 208.595}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7144739969015710889
@@ -726,7 +726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.000061035156, y: 102.708984}
+  m_AnchoredPosition: {x: 0.00048828125, y: 102.708984}
   m_SizeDelta: {x: 0, y: 208.595}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6875588170587283165
@@ -876,7 +876,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.000061035156, y: 102.708984}
+  m_AnchoredPosition: {x: 0.00048828125, y: 102.708984}
   m_SizeDelta: {x: -0.00024414, y: 208.595}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2344085353742911744

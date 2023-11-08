@@ -21,9 +21,16 @@ namespace Game.Table
             tableObjects = GetComponentsInChildren<TableObject>();
         }
 
-
-
-
+        public void SetActiveTableObject(TableObjectType type, bool value)
+        {
+            foreach (TableObject tableObject in tableObjects)
+            {
+                if(tableObject.ObjectType == type)
+                {
+                    tableObject.SetActive(value);
+                }
+            }
+        }
 
 
     }

@@ -511,7 +511,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2857072956815594217}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -550,6 +550,7 @@ MonoBehaviour:
   precisionClick: {fileID: 8552814608024974130}
   button_stop: {fileID: 8173161737313773750}
   seringaObject: {fileID: 7108281719051851080}
+  machucado: {fileID: 5173218725232750735}
 --- !u!114 &1915148176336027806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,7 +967,7 @@ GameObject:
   - component: {fileID: 3610073686517428704}
   - component: {fileID: 8183645396231870429}
   m_Layer: 5
-  m_Name: dodoi (1)
+  m_Name: machucado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -981,15 +982,15 @@ RectTransform:
   m_GameObject: {fileID: 5173218725232750735}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 3.3333333}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1082768709918576079}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 24, y: -101}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3610073686517428704
 CanvasRenderer:
@@ -1012,7 +1013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1211,6 +1212,7 @@ GameObject:
   - component: {fileID: 1082768709918576079}
   - component: {fileID: 7659521652961081818}
   - component: {fileID: 3725797423776200200}
+  - component: {fileID: 5902338202411296869}
   m_Layer: 5
   m_Name: Braco paciente
   m_TagString: Untagged
@@ -1276,6 +1278,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5902338202411296869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8234280351664811561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!1 &9112991042038865337
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class DialogoScript : MonoBehaviour
     public int dialogoIndex;
     public TextMeshProUGUI texto;
     public bool inicioConversa;
-    public AudioSource[] audios;
+    public AudioClip balaoFalaClip;
 
     public bool conversando;
     public bool final;
@@ -69,6 +69,7 @@ public class DialogoScript : MonoBehaviour
         
         if(Input.GetButtonDown("Fire1") && conversando)
         {
+
             if(!inicioConversa)
             {
                 IniciarDialogoInicial();
@@ -185,6 +186,7 @@ public class DialogoScript : MonoBehaviour
 
     IEnumerator MostrarDialogo(string[] mensagem)
     {
+        SoundEffectPlayerManager.Instance.PlaySfx(balaoFalaClip);
         texto.text = "";
         bool pular = false;
         if(conversando && !final)

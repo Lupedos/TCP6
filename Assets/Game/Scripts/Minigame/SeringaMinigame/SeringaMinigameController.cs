@@ -12,6 +12,7 @@ public class SeringaMinigameController : Minigame
     [SerializeField] private PrecisionClick precisionClick;
     [SerializeField] private Button button_stop;
     [SerializeField] private RectTransform seringaObject;
+    [SerializeField] private RectTransform machucado;
     private SeringaStateController stateController;
 
     IViewable seringaObjectViewable;
@@ -20,6 +21,7 @@ public class SeringaMinigameController : Minigame
     public RectTransform SeringaObject { get => seringaObject;private set => seringaObject = value; }
     public SeringaStateController StateController => stateController;
     public IViewable SeringaObjectViewable => seringaObjectViewable;
+    public RectTransform Machucado => machucado;
 
     void Awake()
     {

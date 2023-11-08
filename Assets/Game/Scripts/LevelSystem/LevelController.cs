@@ -10,18 +10,22 @@ using UnityEngine.UI;
 /// 2. Em seguida, verifica se todos foram cumpridos.
 /// 3. Se todos foram cumpridos, dispara um evento sinalizando que todos os objetivos foram cumpridos (EveryObjectiveComplete)
 /// </summary>
+
+[RequireComponent(typeof(LevelConfigurator))]
 public class LevelController : MonoBehaviour
 {
-    private bool DiagnosticoCorretoContaminado = false;
     private FichaController fichaController;
     [SerializeField] private Button button_finalizarExpediente;
     private List<IObjective> objectiveMinigames = new();
     private IObjective fichaObjective; 
     public event Action LevelComplete = delegate {};
     [SerializeField] private TMP_Text text_Dia;
+
+    private LevelConfigurator configurator;
+    private bool pacienteContaminado =>  configurator.Config.PacienteContamindo;
     public bool DiagnosticoEstaCorreto() 
     {
-        return fichaController.JogadorEscolheuContaminado == DiagnosticoCorretoContaminado;
+        return fichaController.JogadorEscolheuContaminado == pacienteContaminado;
     }
 
     public bool LevelTemMinigames() 
@@ -30,7 +34,10 @@ public class LevelController : MonoBehaviour
 
     }
 
-
+    private void Awake()
+    {
+        configurator = GetComponent<LevelConfigurator>();
+    }
 
     void Start()
     {

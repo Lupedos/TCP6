@@ -1,13 +1,11 @@
-using Game.Table;
+using Game.UI;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Game.Table
 {
+    [RequireComponent(typeof(CanvasGroup))]
     public class TableObjectView : MonoBehaviour, IViewable
     {
         private Image image;
@@ -19,10 +17,9 @@ namespace Game.Table
         public CanvasGroup CanvasGroup { get; private set; }
 
         public bool IsActive { get; private set;}
-
         private void Awake()
         {
-            activable = GetComponent<IActivable>();
+            activable = GetComponent<TableObject>();
             image = GetComponent<Image>();
             CanvasGroup = GetComponent<CanvasGroup>();
 
@@ -46,13 +43,16 @@ namespace Game.Table
 
         public void Hide()
         {
-            image.color = new Color(0, 0, 0, 100);
+            CanvasGroup.alpha = 0;
+            CanvasGroup.interactable = false;
+            CanvasGroup.blocksRaycasts = false;
         }
 
         public void Show()
         {
-            image.color = new Color(0, 0, 0, 255);
-
+            CanvasGroup.alpha = 1;
+            CanvasGroup.interactable = true;
+            CanvasGroup.blocksRaycasts = true;
         }
 
         public void SetActive(bool active)

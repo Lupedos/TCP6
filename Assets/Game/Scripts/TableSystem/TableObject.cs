@@ -21,6 +21,8 @@ namespace Game.Table
         [SerializeField] private TableObjectType objectType;
 
         public bool IsActive { get;private set; } = true;
+        
+        public TableObjectType ObjectType { get => objectType; }
 
         public event Action<bool> Activate;
 
@@ -30,10 +32,6 @@ namespace Game.Table
             Activate?.Invoke(active);
         }
 
-        private void Start()
-        {
-           SetActive(false);
-        }
 
     }
 }

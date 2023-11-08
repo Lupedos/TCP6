@@ -65,6 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b380b1079be8ac4ca999e83c2b30636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogoScript: {fileID: 0}
 --- !u!114 &7804024349098531594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1976532967248863701}
   - component: {fileID: 7602944558302434220}
+  - component: {fileID: 664612601784700218}
   m_Layer: 0
   m_Name: LevelController
   m_TagString: Untagged
@@ -147,3 +149,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button_finalizarExpediente: {fileID: 0}
+  text_Dia: {fileID: 0}
+--- !u!114 &664612601784700218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8407447445347065345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6341b80270aa64f9db0d033140b5b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tableController: {fileID: 0}
+  seringaMinigame: {fileID: 0}
+  config:
+    pacienteContamindo: 1
+    seringaObjectOn: 1
+    raioXObjectOn: 1
+    microscopioObjectOn: 1
+    machudoSeringaGrande: 0

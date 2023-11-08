@@ -37,13 +37,14 @@ public class LevelController : MonoBehaviour
     private void Awake()
     {
         configurator = GetComponent<LevelConfigurator>();
+        FindObjectiveMinigames();
+        fichaObjective = FindObjectOfType<FichaController>().GetComponent<IObjective>();
+        fichaController = FindObjectOfType<FichaController>();
     }
 
     void Start()
     {
-        FindObjectiveMinigames();
-        fichaObjective = FindObjectOfType<FichaController>().GetComponent<IObjective>();
-        fichaController = FindObjectOfType<FichaController>();
+
 
         foreach(IObjective iObjective in objectiveMinigames) {
             iObjective.OnComplete += AnyObjectiveComplete;

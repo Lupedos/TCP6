@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class DialogState : State
 {
-    private DialogoScript dialogoScript;
-
-    void Start()
-    {
-        dialogoScript = FindObjectOfType<DialogoScript>();
-    }
+    [SerializeField] private DialogoScript dialogoScript;
 
     public override void StateStart()
     {

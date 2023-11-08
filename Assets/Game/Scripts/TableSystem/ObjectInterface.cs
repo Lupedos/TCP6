@@ -9,13 +9,13 @@ public class ObjectInterface : MonoBehaviour, IViewable
 {
     private TableController tableController;
     [SerializeField] private ViewEventProps eventProps;
-
+    [SerializeField] private TableObjectType type;
     public event Action<bool> Activate;
 
     public CanvasGroup CanvasGroup { get; private set; }
 
     public bool IsActive {get; private set;}
-
+    public TableObjectType Type => type;
     private void Awake()
     {
         tableController = FindObjectOfType<TableController>();

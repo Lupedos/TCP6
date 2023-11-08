@@ -24,19 +24,20 @@ namespace Game.Table
             CanvasGroup = GetComponent<CanvasGroup>();
 
         }
-
-        private void Start()
+        private void OnEnable()
         {
+
             activable.Activate += OnActive;
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
             activable.Activate -= OnActive;
         }
 
         private void OnActive(bool activity)
         {
+            Debug.Log("active changed: " + activity + " " + name);
             if (activity) Show();
             else Hide();
         }

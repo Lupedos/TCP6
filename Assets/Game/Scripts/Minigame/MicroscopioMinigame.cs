@@ -33,10 +33,6 @@ public class MicroscopioMinigame : Minigame, IActivable
     public GameObject laminulaField => clickablePointController.gameObject;
 
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) Debug.Log(getMicroorgRandomPosition);
-    }
 
 
     private void Awake()
@@ -48,9 +44,6 @@ public class MicroscopioMinigame : Minigame, IActivable
 
     private void Start()
     {
-
-        // se o jogo ta no modo facil
-        //TODO:
         GenerateLaminula(laminulaConfig);
 
     }

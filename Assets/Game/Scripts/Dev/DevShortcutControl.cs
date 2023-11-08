@@ -1,7 +1,6 @@
 
 #if UNITY_EDITOR
 using Game.Table;
-using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -31,9 +30,13 @@ public class DevShortcutControl : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Alpha3))
         {
             MicroscopioMinigame microscopio = FindObjectOfType<MicroscopioMinigame>();
-            Debug.Log("marcou tudo certinho: "+microscopio.ClickablePointController.GotThemAllRight);
+            Debug.Log("marcou microscopio certinho: "+microscopio.ClickablePointController.GotThemAllRight);
         }
-        
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            RaioXMinigame raiox = FindObjectOfType<RaioXMinigame>();
+            Debug.Log("marcou raio-x certinho: " + raiox.ClickablePointController.GotThemAllRight);
+        }
     }
 
     void OnGUI()

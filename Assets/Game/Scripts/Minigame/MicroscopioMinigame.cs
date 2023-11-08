@@ -70,7 +70,9 @@ public class MicroscopioMinigame : Minigame, IActivable
         {
             //x: 0 -> -1000; y: 0 -> -850
             GameObject instantiatedMicroorg = Instantiate(GetTrueRandomMicrooganism(), laminulaField.transform, false);
-            instantiatedMicroorg.GetComponent<RectTransform>().anchoredPosition = getMicroorgRandomPosition;
+            RectTransform rectTransform = instantiatedMicroorg.GetComponent<RectTransform>();
+            rectTransform.anchoredPosition = getMicroorgRandomPosition;
+            rectTransform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
         }
     }
 
@@ -79,22 +81,24 @@ public class MicroscopioMinigame : Minigame, IActivable
         for (int i = 0; i < config.GetRandomFalse(); i++)
         {
             GameObject instantiatedMicroorg = Instantiate(GetFalseRandomMicrooganism(), laminulaField.transform, false);
-            instantiatedMicroorg.GetComponent<RectTransform>().anchoredPosition = getMicroorgRandomPosition;
+            RectTransform rectTransform = instantiatedMicroorg.GetComponent<RectTransform>();
+            rectTransform.anchoredPosition = getMicroorgRandomPosition;
+            rectTransform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
         }
     }
 
 
     private void OnDrawGizmosSelected()
     {
-        
+        int sphereSize = 5;
         Gizmos.color = Color.red;
-        Gizmos.DrawSphere(GetComponent<CircleCollider2D>().bounds.min, 10);
+        Gizmos.DrawSphere(GetComponent<CircleCollider2D>().bounds.min, sphereSize);
         Gizmos.color = Color.green;
 
-        Gizmos.DrawSphere(GetComponent<CircleCollider2D>().bounds.center, 10);
+        Gizmos.DrawSphere(GetComponent<CircleCollider2D>().bounds.center, sphereSize);
         Gizmos.color = Color.blue;
 
-        Gizmos.DrawSphere(GetComponent<CircleCollider2D>().bounds.max, 10);
+        Gizmos.DrawSphere(GetComponent<CircleCollider2D>().bounds.max, sphereSize);
     }
 
 

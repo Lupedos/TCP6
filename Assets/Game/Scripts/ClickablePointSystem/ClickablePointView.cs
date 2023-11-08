@@ -7,9 +7,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Image))]
 public class ClickablePointView : MonoBehaviour
 {
-    
-    [Space(20)]
-    [SerializeField] private AudioClip clip;
+    [SerializeField] private AudioClip inMarkedClip;
+    [SerializeField] private AudioClip outMarkedClip;
 
     [Space(20)]
     [SerializeField] private ViewAnimationProps showAnimProps;
@@ -40,15 +39,18 @@ public class ClickablePointView : MonoBehaviour
 
     private void ShowResult(ClickablePoint point)
     {
-        SoundEffectPlayerManager.Instance.PlayCickableSfx(clip);
 
         if (point.marked)
         {
+            SoundEffectPlayerManager.Instance.PlaySfx(inMarkedClip);
+
             childMarkup.localScale = Vector3.zero;
             childMarkup.DOScale(1, showAnimProps.duration).SetEase(showAnimProps.interpolationMode);
         }
         else
         {
+            SoundEffectPlayerManager.Instance.PlaySfx(outMarkedClip);
+
             childMarkup.DOScale(0, showAnimProps.duration).SetEase(showAnimProps.interpolationMode);
         }
 

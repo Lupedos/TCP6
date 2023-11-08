@@ -323,7 +323,7 @@ MonoBehaviour:
   RaioXConfig:
     minFalse: 0
     maxFalse: 2
-    minTrue: 0
+    minTrue: 1
     maxTrue: 2
   GeneratedClickablePoints:
     m_PersistentCalls:
@@ -806,7 +806,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5956723096655028198}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -1165,6 +1165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PointCounter
       objectReference: {fileID: 0}
+    - target: {fileID: 5753382519895285276, guid: a1501613509b3934591e338a8a2bf3ed, type: 3}
+      propertyPath: clickablePointController
+      value: 
+      objectReference: {fileID: 392654345308522201}
     - target: {fileID: 5881804824499325872, guid: a1501613509b3934591e338a8a2bf3ed, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

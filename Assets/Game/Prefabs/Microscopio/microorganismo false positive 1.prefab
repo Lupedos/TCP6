@@ -105,7 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29163d9dd146901459af106c65f52635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: ac7900e85d6ac9745ad6cdc4d866e63e, type: 3}
+  inMarkedClip: {fileID: 8300000, guid: 1bed740b851124f43a014509d8dffaf3, type: 3}
+  outMarkedClip: {fileID: 8300000, guid: f4a095500a81b7149883ad1c80ca4d4f, type: 3}
   showAnimProps:
     duration: 0.4
     interpolationMode: 10

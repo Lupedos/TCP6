@@ -4,6 +4,8 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class PrecisionClick : MonoBehaviour, IActivable
 {
     [SerializeField] private CanvasGroup canvasGroup;
@@ -13,6 +15,9 @@ public class PrecisionClick : MonoBehaviour, IActivable
 
     [SerializeField] private float minSpeed = 1;
     private float speedMultiplier  = 1;
+
+    [SerializeField] private PrecisionClickConfig easyConfig;
+    [SerializeField] private PrecisionClickConfig hardConfig;
 
     public bool IsActive { get; private set;}
     public Scrollbar Scrollbar { get => scrollbar; set => scrollbar = value; }
@@ -74,6 +79,19 @@ public class PrecisionClick : MonoBehaviour, IActivable
 
     }
 
+    public void SetEasyConfig()
+    {
+
+        speedMultiplier = easyConfig.SpeedMultiplier;
+        range.DOScaleX(easyConfig.RangeScaleX, 0.5f).SetEase(Ease.OutCirc);
+    }
+
+    public void SetHardConfig()
+    {
+        speedMultiplier = hardConfig.SpeedMultiplier;
+        range.DOScaleX(hardConfig.RangeScaleX, 0.5f).SetEase(Ease.OutCirc);
+    }
+
     //speedMultiplier: beetween 1 and 2;
     //barWidhtRange: beetween 0.1f to 0.5f
     public void StartLoopMovement(float speedMultiplier, float barWidthRange) 
@@ -86,6 +104,20 @@ public class PrecisionClick : MonoBehaviour, IActivable
 
 
 
+
+
+}
+
+
+
+[Serializable]
+public struct PrecisionClickConfig
+{
+    [SerializeField] private float speedMultiplier;
+    [SerializeField][Range(0.1f, 1)] private float rangeScaleX;
+
+    public float RangeScaleX { get => rangeScaleX; }
+    public float SpeedMultiplier { get => speedMultiplier; }
 }
 
 

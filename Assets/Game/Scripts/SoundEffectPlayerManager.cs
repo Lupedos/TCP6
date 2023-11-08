@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class SoundEffectPlayerManager : MonoBehaviour
 {
-    [SerializeField] private AudioSource clickAudioSource;
+    [SerializeField] private AudioSource sfxAudioSource;
+    [SerializeField] private AudioSource musicAudioSource;
 
 
     public static SoundEffectPlayerManager Instance { get; private set; }
@@ -18,10 +19,10 @@ public class SoundEffectPlayerManager : MonoBehaviour
 
 
 
-    public void PlayCickableSfx(AudioClip clip)
+    public void PlaySfx(AudioClip clip)
     {
-        clickAudioSource.clip = clip;
-        clickAudioSource.Play();
+        sfxAudioSource.clip = clip;
+        sfxAudioSource.Play();
     }
 
 

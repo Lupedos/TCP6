@@ -403,15 +403,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5345488687792050194, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
       propertyPath: laminulaConfig.minTrue
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5345488687792050194, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
       propertyPath: laminulaConfig.maxFalse
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5345488687792050194, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
       propertyPath: laminulaConfig.minFalse
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5345488687792050194, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
       propertyPath: clickablePointController
@@ -555,7 +555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6429169584206963207, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -593.44946
+      value: -593.4494
       objectReference: {fileID: 0}
     - target: {fileID: 6429169584206963207, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -618,7 +618,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -3.2755876}

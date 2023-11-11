@@ -455,26 +455,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[1]
-      value: "Bom dia! Estou sentindo muitas dores na regi\xE3o do t\xF3rax e n\xE3o
-        paro de tossir h\xE1 3 semanas! \xC9 uma daquelas tosses produtivas que saem
-        muito muco, sabe doutor(a)? O que pode ser?"
+      value: Bom dia! Estou me sentindo muito cansado e tenho tido febres e suor
+        noturnos.
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[2]
-      value: "Vamos analisar isto, mas antes me diga: voc\xEA se encaixa em algum
-        destes fatores de risco? \u2018Mora em local aglomerado e fechado? \xC9 fumante
-        de tabaco? E \xE9 da \xE1rea de sa\xFAde?"
+      value: "Entendi, mas antes me diga: voc\xEA se encaixa em algum destes fatores
+        de risco? \u2018Mora em local aglomerado e fechado? \xC9 fumante de tabaco?
+        \xC9 da \xE1rea de sa\xFAde? Tem HIV ou C\xE2ncer? E por fim, fez algum transplante
+        de \xF3rg\xE3o?"
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[3]
-      value: "Fumo tabaco a uns 3 anos j\xE1, e eu moro numa casa bem pequena onde
-        divido com muitas pessoas da minha fam\xEDlia"
+      value: "N\xE3o me encaixo em nenhum dos fatores."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogosFinalErrado.Array.data[1]
       value: "Este paciente est\xE1 contaminado, por que estes sintomas apresentados
-        se encaixam nos sintomas comuns da tuberculose, al\xE9m de que o paciente
-        apresenta fatores de risco da tuberculose. "
+        se encaixam nos sintomas comuns da tuberculose, al\xE9m de que os exames
+        deram ambos positivos."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: DialogoTerminou.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -19,7 +19,6 @@ public class LevelController : MonoBehaviour
     private List<IObjective> objectiveMinigames = new();
     private IObjective fichaObjective; 
     public event Action LevelComplete = delegate {};
-    [SerializeField] private TMP_Text text_Dia;
 
     private LevelConfigurator configurator;
     private bool pacienteContaminado =>  configurator.Config.PacienteContamindo;
@@ -56,13 +55,6 @@ public class LevelController : MonoBehaviour
         button_finalizarExpediente.gameObject.SetActive(false);
 
 
-        SetDiaText();
-
-    }
-
-    private void SetDiaText()
-    {
-        text_Dia.SetText("Dia " + (SceneManager.GetActiveScene().buildIndex - 3));
     }
 
     void OnDestroy()

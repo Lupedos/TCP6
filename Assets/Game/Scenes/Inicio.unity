@@ -1665,10 +1665,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas Menu inicial
       objectReference: {fileID: 0}
-    - target: {fileID: 2440223393437736562, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
-      propertyPath: m_Interactable
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4693874345979325712, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1677,14 +1673,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1576045714}
-    - target: {fileID: 5647458203709151582, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Show
-      objectReference: {fileID: 0}
-    - target: {fileID: 5647458203709151582, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Game.InterfaceViewer, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 6690463384539740901, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1767,7 +1755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8066572061989639395, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
       propertyPath: m_Interactable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1785,18 +1773,6 @@ PrefabInstance:
     - target: {fileID: 584425515439175551, guid: 5785a504f7394d74dab201aa490b2e66, type: 3}
       propertyPath: m_Name
       value: Canvas menu interfaces
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929504165932416850, guid: 5785a504f7394d74dab201aa490b2e66, type: 3}
-      propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929504165932416850, guid: 5785a504f7394d74dab201aa490b2e66, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929504165932416850, guid: 5785a504f7394d74dab201aa490b2e66, type: 3}
-      propertyPath: m_BlocksRaycasts
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4573738924476320060, guid: 5785a504f7394d74dab201aa490b2e66, type: 3}
       propertyPath: m_Pivot.x

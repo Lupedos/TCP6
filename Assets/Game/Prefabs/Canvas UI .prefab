@@ -382,6 +382,7 @@ MonoBehaviour:
     outEvent:
       duration: 0.3
       interpolationMode: 10
+  type: 0
 --- !u!225 &1682506078947331923
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -450,7 +451,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 1
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: -196177845

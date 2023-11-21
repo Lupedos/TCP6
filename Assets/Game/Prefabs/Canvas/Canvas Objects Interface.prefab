@@ -232,6 +232,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4617293941695338557}
     m_Modifications:
+    - target: {fileID: 4531627082350343201, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531627082350343201, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531627082350343201, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5666837619491770002, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
       propertyPath: m_Name
       value: Ficha UI

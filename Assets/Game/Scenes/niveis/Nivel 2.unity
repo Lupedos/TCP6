@@ -1170,6 +1170,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3598254441038151553, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3598254441038151553, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3598254441038151553, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3758515286822667796, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1346,6 +1358,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 323693659}
+    - target: {fileID: 8237593106717517075, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -593.4493
+      objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

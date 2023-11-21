@@ -53,11 +53,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventProps:
     inEvent:
-      duration: 0.5
+      duration: 0.3
       interpolationMode: 9
     outEvent:
-      duration: 0.5
-      interpolationMode: 8
+      duration: 0.3
+      interpolationMode: 9
   type: 0
 --- !u!225 &5695962796695837168
 CanvasGroup:
@@ -140,8 +140,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 14371f6baca65c246a52bfe79f49a516, type: 3}
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 10
 --- !u!114 &7067912865212170983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,8 +183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 66
+    m_Right: 30
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
@@ -234,8 +234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26265353, y: 0}
   m_AnchorMax: {x: 0.74534655, y: 1}
-  m_AnchoredPosition: {x: 0, y: 16.518066}
-  m_SizeDelta: {x: -16.301, y: -118.332}
+  m_AnchoredPosition: {x: -5.1184998, y: -21.703003}
+  m_SizeDelta: {x: 133.332, y: -65.796}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2998944089714887068
 CanvasRenderer:
@@ -263,7 +263,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: -6.6
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -370,9 +370,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.82807815, g: 0.47447488, b: 0.9245283, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9034624, g: 0.6238519, b: 0.9811321, a: 1}
+    m_PressedColor: {r: 0.67446244, g: 0.28365964, b: 0.7830189, a: 1}
+    m_SelectedColor: {r: 0.82745105, g: 0.47450984, b: 0.92549026, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -507,7 +507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -539,9 +539,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 0.7960785, b: 0.54901963, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.88226414, b: 0.7396226, a: 1}
+    m_PressedColor: {r: 0.7830189, g: 0.5338403, b: 0.23195085, a: 1}
+    m_SelectedColor: {r: 1, g: 0.7960785, b: 0.54901963, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -662,12 +662,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 24
+    m_Right: 18
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 2.95
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -689,7 +689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: 40
+  m_MinHeight: 52.49
   m_PreferredWidth: -1
   m_PreferredHeight: 30
   m_FlexibleWidth: -1
@@ -762,8 +762,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Riscos
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+  m_sharedMaterial: {fileID: -5725290483014253962, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -787,13 +787,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -896,8 +896,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sintomas
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+  m_sharedMaterial: {fileID: -5725290483014253962, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -921,13 +921,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1030,8 +1030,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Exames
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+  m_sharedMaterial: {fileID: -5725290483014253962, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1055,13 +1055,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1271,8 +1271,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 14371f6baca65c246a52bfe79f49a516, type: 3}
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1280,7 +1280,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 10
 --- !u!114 &1964452727748067822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1314,8 +1314,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 66
+    m_Right: 30
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
@@ -1390,15 +1390,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7169812, g: 0.28178743, b: 0.18533282, a: 1}
+  m_Color: {r: 0.8679245, g: 0.40378028, b: 0.289854, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 14371f6baca65c246a52bfe79f49a516, type: 3}
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1406,7 +1406,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 10
 --- !u!114 &8723276591974571759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1440,8 +1440,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 66
+    m_Right: 30
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
@@ -1520,7 +1520,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1551,10 +1551,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.7176471, g: 0.28627452, b: 0.18039216, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 0.8679245, g: 0.40378028, b: 0.289854, a: 1}
+    m_HighlightedColor: {r: 0.8962264, g: 0.43052438, b: 0.31621572, a: 1}
+    m_PressedColor: {r: 0.49056602, g: 0.17620109, b: 0.09903879, a: 1}
+    m_SelectedColor: {r: 0.7176471, g: 0.28627452, b: 0.18039216, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1630,6 +1630,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3368399238444457410}
     m_Modifications:
+    - target: {fileID: 769580961330594841, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_Spacing
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 844927182825719676, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Name
       value: exame 3
@@ -1638,17 +1642,61 @@ PrefabInstance:
       propertyPath: m_text
       value: "Exame Raio X do T\xF3rax"
       objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_text
       value: "- Comparar o raio X de um pulm\xE3o saud\xE1vel com o do paciente."
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_lineSpacing
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2063659340752031928, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Enabled
@@ -1800,9 +1848,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8361628908480143707}
     m_Modifications:
+    - target: {fileID: 769580961330594841, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_Spacing
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 844927182825719676, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Name
       value: Aula1 riscos
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_text
@@ -1811,11 +1883,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_lineSpacing
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2063659340752031928, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Enabled
@@ -1967,6 +2063,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3368399238444457410}
     m_Modifications:
+    - target: {fileID: 769580961330594841, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_Spacing
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 844927182825719676, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Name
       value: exame 2
@@ -1975,6 +2075,26 @@ PrefabInstance:
       propertyPath: m_text
       value: Exame Baciloscopia
       objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_text
       value: '- Analisar a quantidade de bacilos gerados automaticamente para positivo
@@ -1982,11 +2102,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_lineSpacing
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2063659340752031928, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Enabled
@@ -2138,6 +2282,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5883165221586967105}
     m_Modifications:
+    - target: {fileID: 769580961330594841, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_Spacing
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 844927182825719676, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Name
       value: Aula2 sintomas
@@ -2145,6 +2293,30 @@ PrefabInstance:
     - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_text
       value: Aula 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5725290483014253962, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_text
@@ -2156,6 +2328,42 @@ PrefabInstance:
 
         -
         Anorexia e Emagrecimento'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_lineSpacing
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5677385400761009837, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2063659340752031928, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Enabled
@@ -2307,6 +2515,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3368399238444457410}
     m_Modifications:
+    - target: {fileID: 769580961330594841, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_Spacing
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 844927182825719676, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Name
       value: exame 1
@@ -2315,17 +2527,61 @@ PrefabInstance:
       propertyPath: m_text
       value: Exame PPD
       objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_text
       value: "- Medir com uma r\xE9gua o tamanho da ferida da inje\xE7\xE3o"
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_lineSpacing
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2063659340752031928, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Enabled
@@ -2477,6 +2733,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8361628908480143707}
     m_Modifications:
+    - target: {fileID: 769580961330594841, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_Spacing
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 844927182825719676, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Name
       value: Aula2 riscos
@@ -2485,17 +2745,61 @@ PrefabInstance:
       propertyPath: m_text
       value: Aula 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_text
       value: "- Diabetes\n- C\xE2ncer\n- HIV/AIDS\n- Transplante (Imunossupressores)"
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_lineSpacing
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2063659340752031928, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Enabled
@@ -2647,9 +2951,78 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5883165221586967105}
     m_Modifications:
+    - target: {fileID: 769580961330594841, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_Spacing
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 844927182825719676, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Name
       value: Aula1 sintomas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5725290483014253962, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
+    - target: {fileID: 1092413532199230808, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_text
+      value: "- Duas semanas de tosse\n- Dor no T\xF3rax\n- Tosse com sangue (Hemoptise)\n-
+        Falta de Ar (Dispneia)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_lineSpacing
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5677385400761009837, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632578281933757592, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2063659340752031928, guid: 5de51333aa3c16444bee3db62cf792a9, type: 3}
       propertyPath: m_Enabled

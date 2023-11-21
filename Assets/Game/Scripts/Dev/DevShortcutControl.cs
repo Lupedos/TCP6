@@ -41,7 +41,7 @@ public class DevShortcutControl : MonoBehaviour
 
     void OnGUI()
     {
-        if(!enabled) return;
+        if(enabled == false) return;
         GUI.Label(new Rect(Screen.width/2, 0, 300,50), gameStateController.CurrentState.GetType().ToString());
 
     }

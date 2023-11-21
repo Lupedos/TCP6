@@ -10,7 +10,7 @@ namespace Game {
         [SerializeField] private ViewEventProps viewEventProps;
         [SerializeField] [Range(1, 2)] private float scaleMultiplier;
         private Vector3 initialScale = Vector3.one;
-       
+        
         //private void Awake()
         //{
         //    rectTransform = GetComponent<RectTransform>();

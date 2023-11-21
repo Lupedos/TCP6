@@ -3,9 +3,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class DialogoScript : MonoBehaviour
 {
+    public float velocidadeCaracteres = 0.001f;
     public string[] dialogos;
     public string[] dialogosFinalCerto;
     public string[] dialogosFinalErrado;
@@ -201,11 +203,11 @@ public class DialogoScript : MonoBehaviour
         //Botar audio play aqui
         foreach (char letter in mensagem[dialogoIndex])
         {   
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(velocidadeCaracteres);
             if(pular == false)
             {
                 texto.text += letter;
-                if(Input.GetButton("Fire1"))
+                if(Input.GetButtonDown("Fire1"))
                 {
                     texto.text = "";
                     texto.text = mensagem[dialogoIndex];
@@ -217,4 +219,6 @@ public class DialogoScript : MonoBehaviour
             
         }
     }
+
+
 }

@@ -360,6 +360,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: aabe7a5093e7e074baa84094d2f7dc07, type: 3}
+    - target: {fileID: 4825692085720281124, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5160123945807009919, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -494,7 +498,7 @@ PrefabInstance:
       propertyPath: dialogos.Array.data[7]
       value: "As tosses vinda da tuberculose, podem sair sangue depois de algumas
         semanas. E as caracter\xEDsticas da tosse s\xE3o as que persistem depois
-        de 2 semanas pelo menos."
+        de DUAS semanas pelo menos."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[8]

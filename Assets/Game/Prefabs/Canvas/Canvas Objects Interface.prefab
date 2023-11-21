@@ -440,18 +440,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7685298733772325574, guid: 4c747d68a3fdd9e408641d0333c2e8a9, type: 3}
-      propertyPath: eventProps.inEvent.duration
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7685298733772325574, guid: 4c747d68a3fdd9e408641d0333c2e8a9, type: 3}
-      propertyPath: eventProps.outEvent.duration
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7685298733772325574, guid: 4c747d68a3fdd9e408641d0333c2e8a9, type: 3}
-      propertyPath: eventProps.outEvent.interpolationMode
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 9116587004722873107, guid: 4c747d68a3fdd9e408641d0333c2e8a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

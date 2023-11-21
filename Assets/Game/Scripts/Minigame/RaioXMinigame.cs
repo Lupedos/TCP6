@@ -10,7 +10,8 @@ public class RaioXMinigame : Minigame
     [SerializeField] ClickablePointController clickablePointController;
     [SerializeField] private GameObject[] falseSpotPrefab;
     [SerializeField] private GameObject[] trueSpotPrefab;
-    [SerializeField] private GameObject bigSpotOnBotton;
+    [SerializeField] private GameObject leftSpotOnBotton;
+    [SerializeField] private GameObject rightSpotOnBotton;
 
     [SerializeField] private LaminulaConfig RaioXConfig;
 
@@ -64,12 +65,14 @@ public class RaioXMinigame : Minigame
             rectTransform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
         }
 
-        bool bigSpotActive = Random.Range(0, 2) > 0;
-        bigSpotOnBotton.SetActive(bigSpotActive);
+        GenerateSpotOnBottom();
+
+
     }
 
     private void GenerateFalses(LaminulaConfig config)
     {
+        if (falseSpotPrefab.Length == 0) return;
         for (int i = 0; i < config.GetRandomFalse(); i++)
         {
             GameObject instantiatedMicroorg = Instantiate(GetRandomSpotFalse(), ClickableParent.transform, false);
@@ -79,6 +82,14 @@ public class RaioXMinigame : Minigame
         }
     }
 
+
+    private void GenerateSpotOnBottom()
+    {
+        //33% mancha esquerda; 33% mancha direta; 33% de não vir nenhum
+        int randomValue = Random.Range(0, 3);
+        leftSpotOnBotton.SetActive(randomValue == 0);
+        rightSpotOnBotton.SetActive(randomValue == 1);
+    }
 
     private void OnDrawGizmosSelected()
     {

@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5448efe9d7454641b713d367ed94323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeCaracteres: 0.01
+  velocidadeCaracteres: 0.02
   dialogos:
   - Bom dia, com o que posso ajudar?
   - "Bom dia! Estou sentindo muitas dores na regi\xE3o do t\xF3rax e n\xE3o paro

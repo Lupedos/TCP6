@@ -198,22 +198,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8428165147167081953, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
-      propertyPath: eventProps.inEvent.duration
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428165147167081953, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
-      propertyPath: eventProps.outEvent.duration
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428165147167081953, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
-      propertyPath: eventProps.outEvent.interpolationMode
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8712203653057753222, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -593.44934
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -666,6 +650,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2583451217138885745, guid: 71e0dba7bd261854882ad6749ab4e787, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5.1185303
+      objectReference: {fileID: 0}
     - target: {fileID: 2810257423629886949, guid: 71e0dba7bd261854882ad6749ab4e787, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -939,18 +927,6 @@ PrefabInstance:
     - target: {fileID: 2857072956815594217, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
       propertyPath: m_Name
       value: Seringa UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 2864547744691526240, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
-      propertyPath: eventProps.inEvent.duration
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2864547744691526240, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
-      propertyPath: eventProps.outEvent.duration
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2864547744691526240, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
-      propertyPath: eventProps.outEvent.interpolationMode
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6170762882928409731, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
       propertyPath: m_Pivot.x

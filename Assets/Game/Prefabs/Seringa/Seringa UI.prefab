@@ -529,11 +529,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventProps:
     inEvent:
-      duration: 0.5
+      duration: 0.3
       interpolationMode: 9
     outEvent:
-      duration: 0.5
-      interpolationMode: 8
+      duration: 0.3
+      interpolationMode: 9
   type: 2
 --- !u!114 &8892411414927389917
 MonoBehaviour:

@@ -351,7 +351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1400395020960806228, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 266.59
+      value: 294.65
       objectReference: {fileID: 0}
     - target: {fileID: 2021177430966699326, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Name
@@ -359,16 +359,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3086476353172081525, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3086476353172081525, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: faa70e9c47497984087951a7e5ffb5e8, type: 3}
+      objectReference: {fileID: 21300000, guid: b50b103f65d1e354b9c71541a25297b5, type: 3}
     - target: {fileID: 3686232975831372024, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 702cc755b52a3564da4545dd1c6e76bb, type: 3}
+      objectReference: {fileID: 21300000, guid: 5dbcdc776173f01459c4740ea7bb5ac7, type: 3}
     - target: {fileID: 3686232975831372024, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
@@ -455,8 +455,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[1]
-      value: "Bom dia! Minha filha tem tido febres \xE0 noite e tem suado de noite
-        tamb\xE9m, al\xE9m de estar tossindo por 2 semanas e com dor no t\xF3rax."
+      value: "Bom dia! Estou h\xE1 duas semanas com uma tosse seca e febres \xE0
+        noite."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[2]
@@ -866,7 +866,7 @@ PrefabInstance:
       objectReference: {fileID: 544841157}
     - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: config.raioXObjectOn
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: config.seringaObjectOn
@@ -878,7 +878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: config.machudoSeringaGrande
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1976532967248863701, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: m_LocalPosition.x
@@ -955,19 +955,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 136970169276631904, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 136970169276631904, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 136970169276631904, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 274.845
       objectReference: {fileID: 0}
     - target: {fileID: 136970169276631904, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -364.805
       objectReference: {fileID: 0}
     - target: {fileID: 155994044533019774, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -1345,25 +1345,33 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 323693659}
+    - target: {fileID: 7009797048036398854, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: laminulaConfig.minFalse
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8237593106717517075, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -593.4493
+      value: -268.4001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347438193394006008, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 763.0885
       objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -364.805
       objectReference: {fileID: 0}
     - target: {fileID: 8534429587325063028, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y

@@ -359,16 +359,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3086476353172081525, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3086476353172081525, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: faa70e9c47497984087951a7e5ffb5e8, type: 3}
+      objectReference: {fileID: 21300000, guid: b50b103f65d1e354b9c71541a25297b5, type: 3}
     - target: {fileID: 3686232975831372024, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 702cc755b52a3564da4545dd1c6e76bb, type: 3}
+      objectReference: {fileID: 21300000, guid: daaebd4fbd95fda4f93fbd7f656f5bc6, type: 3}
     - target: {fileID: 3686232975831372024, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
@@ -880,7 +880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: config.machudoSeringaGrande
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1976532967248863701, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1347,6 +1347,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 323693659}
+    - target: {fileID: 7009797048036398854, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: laminulaConfig.maxFalse
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009797048036398854, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: laminulaConfig.minFalse
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302908420013215920, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: RaioXConfig.maxTrue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302908420013215920, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: RaioXConfig.minTrue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

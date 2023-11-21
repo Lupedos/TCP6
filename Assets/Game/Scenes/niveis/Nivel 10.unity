@@ -347,11 +347,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1400395020960806228, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1400395020960806228, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 266.59
+      value: 294.65
       objectReference: {fileID: 0}
     - target: {fileID: 2021177430966699326, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Name
@@ -359,16 +359,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3086476353172081525, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3086476353172081525, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: faa70e9c47497984087951a7e5ffb5e8, type: 3}
+      objectReference: {fileID: 21300000, guid: b50b103f65d1e354b9c71541a25297b5, type: 3}
     - target: {fileID: 3686232975831372024, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 702cc755b52a3564da4545dd1c6e76bb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6da3ba045b221db448a2fe347947cc97, type: 3}
     - target: {fileID: 3686232975831372024, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
@@ -455,21 +455,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[1]
-      value: "Bom dia! Estou com tosses secas essa semana. Meu irm\xE3o que mora
-        comigo foi diagnosticado com tuberculose, mas como sou vacinado h\xE1 mais
-        ou menos 1 ano, imaginei que n\xE3o pegaria, ent\xE3o quero confirmar se
-        peguei a doen\xE7a ou n\xE3o."
+      value: "Bom dia! Estou tossindo h\xE1 TR\xCAS semanas e estou com falta de
+        ar."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[2]
-      value: "Fez bem ter vindo, mas me diga: voc\xEA se encaixa em algum destes
-        fatores de risco? \u2018Mora em local aglomerado e fechado? \xC9 fumante
-        de tabaco? \xC9 da \xE1rea de sa\xFAde? Tem HIV ou C\xE2ncer? E por fim,
-        fez algum transplante de \xF3rg\xE3o?"
+      value: "Entendi, mas antes me diga: voc\xEA se encaixa em algum destes fatores
+        de risco? \u2018Mora em local aglomerado e fechado? \xC9 fumante de tabaco?
+        \xC9 da \xE1rea de sa\xFAde? Tem HIV ou C\xE2ncer? E por fim, fez algum transplante
+        de \xF3rg\xE3o?"
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[3]
-      value: Fumo tabaco.
+      value: "Trabalho na \xE1rea da sa\xFAde."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogosFinalErrado.Array.data[1]
@@ -873,6 +871,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: config.seringaObjectOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
+      propertyPath: config.pacienteContamindo
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
@@ -1348,6 +1350,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 323693659}
+    - target: {fileID: 7009797048036398854, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: laminulaConfig.maxTrue
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009797048036398854, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: laminulaConfig.minTrue
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

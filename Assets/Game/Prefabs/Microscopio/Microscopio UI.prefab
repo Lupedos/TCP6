@@ -398,6 +398,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: MicroscopioMinigame
       objectReference: {fileID: 0}
+    - target: {fileID: 5345488687792050194, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
+      propertyPath: laminulaConfig.maxTrue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5345488687792050194, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
+      propertyPath: laminulaConfig.minTrue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5345488687792050194, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
+      propertyPath: trueMicroorganismPrefab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5345488687792050194, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
+      propertyPath: falseMicroorganismPrefab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5345488687792050194, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
+      propertyPath: falseMicroorganismPrefab.Array.data[1]
+      value: 
+      objectReference: {fileID: 4720451261828256408, guid: b76568473bdd84e4f916cfce885365da, type: 3}
     - target: {fileID: 6429169584206963207, guid: 0d419882e63e62943bf41a831388d8b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

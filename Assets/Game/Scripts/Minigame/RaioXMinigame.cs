@@ -87,6 +87,8 @@ public class RaioXMinigame : Minigame
     {
         //33% mancha esquerda; 33% mancha direta; 33% de não vir nenhum
         int randomValue = Random.Range(0, 3);
+        if (RaioXConfig.MaxTrue <= 0) randomValue = 2;
+
         leftSpotOnBotton.SetActive(randomValue == 0);
         rightSpotOnBotton.SetActive(randomValue == 1);
     }

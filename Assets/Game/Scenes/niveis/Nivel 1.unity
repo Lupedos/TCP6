@@ -431,8 +431,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[1]
-      value: "Bom dia! Fazem 4 semanas que n\xE3o paro de ter o mesmo tipo de tosse
-        parox\xEDstica, ou seja, s\xFAbitas e violentas. Aguardei e me automediquei,
+      value: "Bom dia! Fazem quatro semanas que n\xE3o paro de ter o mesmo tipo de
+        tosse parox\xEDstica, ou seja, s\xFAbitas e violentas. Aguardei e me automediquei,
         mas nada fazia passar, estou preocupada que seja tuberculose."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}

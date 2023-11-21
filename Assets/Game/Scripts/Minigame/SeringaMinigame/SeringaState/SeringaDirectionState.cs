@@ -19,7 +19,7 @@ public class SeringaDirectionState : State
     public override void StateStart()
     {
 
-        seringaController.SetMessage("Posição.");
+        seringaController.SetMessage("Acerte o ângulo e direção.");
         scroolbarMiddlePoint = seringaController.PrecisionClick.Scrollbar.size/2;
         seringaController.PrecisionClick.Scrollbar.onValueChanged.AddListener(OnScrollbarChange);
         seringaController.PrecisionClick.IsClickOnRange += IsClickOnRange;

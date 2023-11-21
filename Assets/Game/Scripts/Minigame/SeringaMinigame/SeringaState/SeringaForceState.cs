@@ -22,7 +22,7 @@ public class SeringaForceState : State
 
     public override void StateStart()
     {
-        seringaController.SetMessage("Força.");
+        seringaController.SetMessage("Ajuste a força.");
 
         seringaController.PrecisionClick.SetActive(true);
         seringaController.PrecisionClick.IsClickOnRange += IsClickOnRange;
@@ -59,8 +59,8 @@ public class SeringaForceState : State
         SoundEffectPlayerManager.Instance.PlaySfx(correctClickClip);
 
         Vector3 seringaObjectTargetPos = seringaController.SeringaObject.transform.rotation*Vector3.up*8;
-        seringaController.SeringaObject.DOLocalMove(seringaObjectTargetPos, 1);
-        seringaController.SetMessage("Muito bem");
+        seringaController.SeringaObject.DOLocalMove(machucadoImage.transform.position+Vector3.one*10, 1);
+        seringaController.SetMessage("Muito bem!");
         seringaController.PrecisionClick.SetActive(false);
         
         yield return new WaitForSeconds(1);

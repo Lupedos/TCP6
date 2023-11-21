@@ -4,6 +4,8 @@ using UnityEngine;
 [Serializable]
 public class LevelConfig 
 {
+    [SerializeField] private bool carregaProximoLevel;
+    [SerializeField] private bool apenasDialogo;
     [SerializeField] private bool pacienteContamindo;
 
     [Header("Se TRUE, habilita o objeto na mesa.")]
@@ -16,9 +18,11 @@ public class LevelConfig
 
 
 
+    public bool ApenasDiálogo { get => apenasDialogo; }
     public bool SeringaOn { get => seringaObjectOn;  }
     public bool RaioXOn { get => raioXObjectOn;}
     public bool MicroscopioOn { get => microscopioObjectOn;  }
     public bool PacienteContamindo { get => pacienteContamindo; }
     public bool MachudoSeringaGrande { get => machudoSeringaGrande; }
+    public bool CarregaProximoLevel { get => carregaProximoLevel;  }
 }

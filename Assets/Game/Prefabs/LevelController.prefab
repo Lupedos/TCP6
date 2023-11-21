@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d5da1c3324cf04da97f6812519cfc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tableController: {fileID: 0}
 --- !u!114 &309439436322849145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abe3ec0acf01f57499fb1545e3770f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelConfigurator: {fileID: 664612601784700218}
 --- !u!1 &8407447445347065345
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button_finalizarExpediente: {fileID: 0}
-  text_Dia: {fileID: 0}
 --- !u!114 &664612601784700218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,8 +166,10 @@ MonoBehaviour:
   tableController: {fileID: 0}
   seringaMinigame: {fileID: 0}
   config:
-    pacienteContamindo: 1
+    carregaProximoLevel: 1
+    apenasDialogo: 0
+    pacienteContamindo: 0
     seringaObjectOn: 1
     raioXObjectOn: 1
     microscopioObjectOn: 1
-    machudoSeringaGrande: 0
+    machudoSeringaGrande: 1

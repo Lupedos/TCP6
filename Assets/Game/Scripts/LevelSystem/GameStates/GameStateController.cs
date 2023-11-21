@@ -9,6 +9,7 @@ public class GameStateController : StateController
 
     private int CurrentStateIndex => statesOrdered.IndexOf(CurrentState);
     public event Action FinishGameState = delegate {};
+    public State LastState => statesOrdered[statesOrdered.Count - 1];
     public bool IsLastState() 
     {
         return CurrentStateIndex == (statesOrdered.Count - 1);

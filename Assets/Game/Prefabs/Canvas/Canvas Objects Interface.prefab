@@ -264,10 +264,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4531627082350343201, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
-      propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5666837619491770002, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
       propertyPath: m_Name
       value: Ficha UI
@@ -355,42 +351,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3364948539304650096, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1312498199236383116}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
---- !u!1 &2431575830397054672 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3364948539304650096, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
-  m_PrefabInstance: {fileID: 1084245509776133024}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1312498199236383116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2431575830397054672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 147
-    m_Right: 143
-    m_Top: 330
-    m_Bottom: 216
-  m_ChildAlignment: 0
-  m_Spacing: 46.45
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!224 &9061127542995751878 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8265113525358286950, guid: 353cb0dfdda61e54b89b1db5ca7d1b1e, type: 3}
@@ -908,6 +870,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4617293941695338557}
     m_Modifications:
+    - target: {fileID: 159713934892421455, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1478344210783810047, guid: 9b478a88fa238164e8cdf061626c114b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

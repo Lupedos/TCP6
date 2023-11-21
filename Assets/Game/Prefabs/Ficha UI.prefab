@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 2081196553497475537}
   - component: {fileID: 7098641760400844077}
   - component: {fileID: 9113031186524044948}
-  - component: {fileID: 7801592019095011751}
+  - component: {fileID: 2018830151967888822}
   m_Layer: 5
   m_Name: Ficha
   m_TagString: Untagged
@@ -393,7 +393,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 621.699, y: 0}
+  m_SizeDelta: {x: 494.567, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4507066263416056646
 CanvasRenderer:
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AllowSwitchOff: 1
---- !u!114 &7801592019095011751
+--- !u!114 &2018830151967888822
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -474,18 +474,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 154
-    m_Right: 154
-    m_Top: 337
-    m_Bottom: 209
+    m_Left: 147
+    m_Right: 143
+    m_Top: 330
+    m_Bottom: 216
   m_ChildAlignment: 0
-  m_Spacing: 24.35
+  m_Spacing: 46.45
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
-  m_ChildScaleWidth: 1
-  m_ChildScaleHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
 --- !u!1 &5666837619491770002
 GameObject:

@@ -1,10 +1,11 @@
 
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EndLevelState : State
 {
     private SceneLoader sceneLoader;
-
+    [SerializeField] private LevelConfigurator levelConfigurator;
     void Start()
     {
         sceneLoader = FindObjectOfType<SceneLoader>();
@@ -16,7 +17,15 @@ public class EndLevelState : State
         int sceneIndex  = SceneManager.GetActiveScene().buildIndex;
 
         SaveLoad.SaveLevelCompleted(sceneIndex - 3);
-        sceneLoader.LoadLevelSelectScene();
+
+        if (levelConfigurator.Config.CarregaProximoLevel)
+        {
+            sceneLoader.PerformLoadNextLeveScene();
+        } else
+        {
+            sceneLoader.PerformLoadLevelSelectScene();
+
+        }
 
     }
 

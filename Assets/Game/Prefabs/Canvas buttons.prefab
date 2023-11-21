@@ -123,7 +123,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00024414062, y: -4.8880005}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.001, y: -23.743}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3215590476569737030
@@ -163,8 +163,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281809940
+  m_fontColor: {r: 0.078431375, g: 0.23529413, b: 0.21568629, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -181,13 +181,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 32
   m_VerticalAlignment: 4096
   m_textAlignment: 65535
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 568883277005120077}
   - component: {fileID: 1440860337202091091}
   m_Layer: 5
-  m_Name: Text_Dia
+  m_Name: Text_Dia_nivel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: n
+  m_text: Dia n
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
   m_sharedMaterial: {fileID: -5725290483014253962, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
@@ -525,8 +525,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -264, y: 196}
-  m_SizeDelta: {x: 528, y: 201}
+  m_AnchoredPosition: {x: -199.88, y: 619.73}
+  m_SizeDelta: {x: 399.759, y: 201}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2516097767850896610
 CanvasRenderer:
@@ -587,7 +587,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.7646351, g: 0, b: 1, a: 1}
+    m_NormalColor: {r: 0.8543839, g: 0.38113207, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.44705883, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.5471698, g: 0, b: 0.5471698, a: 1}
     m_SelectedColor: {r: 0.76470596, g: 0, b: 1, a: 1}
@@ -683,7 +683,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: -196177845
+  m_SortingLayerID: -2002145989
   m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!114 &6947500749152621916

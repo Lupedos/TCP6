@@ -18,7 +18,7 @@ public class DialogoScript : MonoBehaviour
     public TextMeshProUGUI texto;
     public bool inicioConversa;
     public AudioClip balaoFalaClip;
-
+    public bool medicafalando;
     public bool conversando;
     public bool final;
     [SerializeField] private CanvasGroup myTextUI;
@@ -191,7 +191,7 @@ public class DialogoScript : MonoBehaviour
         SoundEffectPlayerManager.Instance.PlaySfx(balaoFalaClip);
         texto.text = "";
         bool pular = false;
-        if(conversando && !final)
+        if(conversando && !final && !medicafalando)
         {
             h = !h;
             balao[0].gameObject.SetActive(h);

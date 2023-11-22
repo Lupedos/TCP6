@@ -441,6 +441,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: medicafalando
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.size
       value: 10
       objectReference: {fileID: 0}

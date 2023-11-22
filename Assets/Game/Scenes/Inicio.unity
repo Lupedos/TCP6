@@ -450,7 +450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &776121242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,6 +635,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175604170}
   m_CullTransparentMesh: 1
+--- !u!114 &1364138199 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 160239229322935514, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+  m_PrefabInstance: {fileID: 224474766285008002}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68eea58d0f47854a8431696fa833978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1376689939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,9 +1070,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 776121246}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -22.660156, y: -19.050781}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 22.865, y: -19.446}
   m_SizeDelta: {x: 45.729797, y: 38.89279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1592256762
@@ -1665,6 +1676,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas Menu inicial
       objectReference: {fileID: 0}
+    - target: {fileID: 152839961467231297, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 160239229322935514, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: menuConfig
+      value: 
+      objectReference: {fileID: 278196426}
     - target: {fileID: 4693874345979325712, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1753,9 +1772,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7378897107515787121, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8066572061989639395, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
       propertyPath: m_Interactable
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066572061989639395, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1364138199}
+    - target: {fileID: 8066572061989639395, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Configuracoes
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066572061989639395, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuScript, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -21,7 +21,15 @@ public class ConfigScript : MonoBehaviour
     menuConfig.gameObject.SetActive(false);
     aberto = false;
   }
-
+  void Update()
+  {
+     
+    if(Input.GetKeyDown(KeyCode.Escape))
+    {
+      Configuracoes();
+     
+    }
+  }
   public void Configuracoes()
   {
     aberto = !aberto;
@@ -33,5 +41,10 @@ public class ConfigScript : MonoBehaviour
     {
         menuConfig.gameObject.SetActive(false);
     }
+    
+  }
+  public void Sair()
+  {
+    Application.Quit();
   }
 }

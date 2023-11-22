@@ -38,5 +38,6 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    
 
 }

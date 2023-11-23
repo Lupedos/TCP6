@@ -361,6 +361,7 @@ MonoBehaviour:
   texto: {fileID: 4825692085720281124}
   inicioConversa: 0
   balaoFalaClip: {fileID: 8300000, guid: 3823e23ac1d6a274aa3f62170493ba48, type: 3}
+  medicafalando: 0
   conversando: 1
   final: 0
   myTextUI: {fileID: 3529391792006179098}
@@ -555,8 +556,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
-  m_sharedMaterial: {fileID: -5677385400761009837, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 485c584a0fb51164ebb264e340d32c9f, type: 2}
+  m_sharedMaterial: {fileID: 8791831968800905666, guid: 485c584a0fb51164ebb264e340d32c9f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -592,7 +593,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -20
+  m_lineSpacing: -13.34
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

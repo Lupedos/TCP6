@@ -14,8 +14,8 @@ public class Calendary : MonoBehaviour
     }
     void Start()
     {
-        int currentScene = SceneManager.GetActiveScene().buildIndex - 3;
-        text_day.SetText(currentScene.ToString());
+        //int currentScene = SceneManager.GetActiveScene().buildIndex - 3;
+        //text_day.SetText(currentScene.ToString());
 
     }
 

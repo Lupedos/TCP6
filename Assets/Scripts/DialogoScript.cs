@@ -69,7 +69,8 @@ public class DialogoScript : MonoBehaviour
     {
 
         
-        if(Input.GetButtonDown("Fire1") && conversando)
+        if(Input.GetButtonDown("Fire1") && conversando
+        || Input.GetKeyDown(KeyCode.Space) && conversando)
         {
 
             if(!inicioConversa)
@@ -87,11 +88,13 @@ public class DialogoScript : MonoBehaviour
         {
             if(!inicioConversa)
             InicioDialogo(dialogosFinalCerto);
+            balao[2].gameObject.SetActive(true);
 
-
-            if(Input.GetButtonDown("Fire1") && texto.text == dialogosFinalCerto[dialogoIndex])
+            if(Input.GetButtonDown("Fire1") && texto.text == dialogosFinalCerto[dialogoIndex]
+            || Input.GetKeyDown(KeyCode.Space) && texto.text == dialogosFinalCerto[dialogoIndex])
             {
                 proximoDialogo(dialogosFinalCerto);
+                
             }
 
 
@@ -99,10 +102,12 @@ public class DialogoScript : MonoBehaviour
         else  if(final && ganhou == false)
         {
             if(!inicioConversa) InicioDialogo(dialogosFinalErrado);
-
-            if(Input.GetButtonDown("Fire1") && texto.text == dialogosFinalErrado[dialogoIndex])
+            balao[2].gameObject.SetActive(true);
+            if(Input.GetButtonDown("Fire1") && texto.text == dialogosFinalErrado[dialogoIndex]
+            || Input.GetKeyDown(KeyCode.Space) && texto.text == dialogosFinalErrado[dialogoIndex])
             {
                 proximoDialogo(dialogosFinalErrado);
+                
             }
         }
         
@@ -145,6 +150,7 @@ public class DialogoScript : MonoBehaviour
         if(final)
         {
             pessoa[1].gameObject.SetActive(true);
+            pessoa[0].gameObject.SetActive(false);
         }
         else
         {
@@ -171,15 +177,14 @@ public class DialogoScript : MonoBehaviour
             {
                 pessoa[1].gameObject.SetActive(false);
             }
-            else
-            {
-                pessoa[0].gameObject.SetActive(false);
-            }
+           
+                
+            
             conversando = false;
             fadeOut = true;
             final = false;
-            balao[0].gameObject.SetActive(true);
-            balao[1].gameObject.SetActive(false);  
+            balao[0].gameObject.SetActive(false);
+            balao[1].gameObject.SetActive(true);  
             DialogoTerminou?.Invoke();
 
         }
@@ -199,6 +204,7 @@ public class DialogoScript : MonoBehaviour
             balao[1].gameObject.SetActive(h);
             h = !h;
         }
+        
 
         //Botar audio play aqui
         foreach (char letter in mensagem[dialogoIndex])
@@ -207,7 +213,7 @@ public class DialogoScript : MonoBehaviour
             if(pular == false)
             {
                 texto.text += letter;
-                if(Input.GetButtonDown("Fire1"))
+                if(Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Space))
                 {
                     texto.text = "";
                     texto.text = mensagem[dialogoIndex];

@@ -166,12 +166,12 @@ RectTransform:
   m_Children:
   - {fileID: 1400395020960806228}
   - {fileID: 1666798959042827928}
-  m_Father: {fileID: 5252383499315966127}
+  m_Father: {fileID: 5160123945807009919}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00012207031}
-  m_SizeDelta: {x: 0, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4523157907225913435
 Canvas:
@@ -247,6 +247,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1081245893333418460}
   - {fileID: 5252383499315966127}
   - {fileID: 4288954543457070698}
   m_Father: {fileID: 0}
@@ -357,10 +358,12 @@ MonoBehaviour:
   balao:
   - {fileID: 3086476353172081525}
   - {fileID: 8352079153687137882}
+  - {fileID: 5121814358244950012}
   dialogoIndex: 0
   texto: {fileID: 4825692085720281124}
   inicioConversa: 0
   balaoFalaClip: {fileID: 8300000, guid: 3823e23ac1d6a274aa3f62170493ba48, type: 3}
+  medicafalando: 0
   conversando: 1
   final: 0
   myTextUI: {fileID: 3529391792006179098}
@@ -652,8 +655,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1081245893333418460}
   - {fileID: 8409336266130849273}
+  - {fileID: 4283732791345012963}
   - {fileID: 8901141362477212750}
   - {fileID: 9016438001901409847}
   m_Father: {fileID: 5160123945807009919}
@@ -785,7 +788,7 @@ GameObject:
   - component: {fileID: 6875588170587283165}
   - component: {fileID: 3086476353172081525}
   m_Layer: 5
-  m_Name: Caixa de texto Medica
+  m_Name: Caixa de texto Eu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1132,3 +1135,78 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7928898950564429118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4283732791345012963}
+  - component: {fileID: 3043482579434529523}
+  - component: {fileID: 5121814358244950012}
+  m_Layer: 5
+  m_Name: Caixa de texto Medica
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &4283732791345012963
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7928898950564429118}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5252383499315966127}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -1.0921631, y: 109.27002}
+  m_SizeDelta: {x: -28.401, y: 195.473}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3043482579434529523
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7928898950564429118}
+  m_CullTransparentMesh: 1
+--- !u!114 &5121814358244950012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7928898950564429118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f7c08025b948d5746881fc4d475fd44a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 0.7

@@ -4,6 +4,7 @@ using UnityEngine;
 [Serializable]
 public class LevelConfig 
 {
+    [SerializeField] private bool cenaTutorial;
     [SerializeField] private bool carregaProximoLevel;
     [SerializeField] private bool apenasDialogo;
     [SerializeField] private bool pacienteContamindo;
@@ -18,6 +19,7 @@ public class LevelConfig
 
 
 
+    public bool CenaTutorial { get => cenaTutorial; }
     public bool ApenasDiálogo { get => apenasDialogo; }
     public bool SeringaOn { get => seringaObjectOn;  }
     public bool RaioXOn { get => raioXObjectOn;}

@@ -949,8 +949,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 544841157}
     - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
+      propertyPath: config.cenaTutorial
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: config.apenasDialogo
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: config.raioXObjectOn

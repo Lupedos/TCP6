@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 5748467794092630535}
   - component: {fileID: 2730518745935393031}
   - component: {fileID: 3759549907740746149}
+  - component: {fileID: 9159581448360123209}
   m_Layer: 5
-  m_Name: Calendary
+  m_Name: Calendary Dia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,16 +30,16 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7849334774708467070}
   m_Father: {fileID: 6717733883888557712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 43.099976, y: -47}
-  m_SizeDelta: {x: 130.67029, y: 148.0911}
-  m_Pivot: {x: 0.49999994, y: 0.5}
+  m_AnchoredPosition: {x: -0.00024414062, y: 0}
+  m_SizeDelta: {x: 91.632, y: 100}
+  m_Pivot: {x: -0.00000028684735, y: 0.9999998}
 --- !u!222 &5748467794092630535
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -89,6 +90,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c78589249ef446e4d90ebb1d62690757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &9159581448360123209
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223747656044833867}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd2e0a48566c149459189d53bc86a48a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1679813180488482508
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -47.07617, y: -36.393707}
+  m_AnchoredPosition: {x: -47.07617, y: -36.393677}
   m_SizeDelta: {x: 94.30298, y: 72.787994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7016310088659999079
@@ -389,8 +411,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 63.4439, y: -83.14882}
-  m_SizeDelta: {x: 79.0057, y: 39.4706}
+  m_AnchoredPosition: {x: 45.816017, y: -62}
+  m_SizeDelta: {x: 91.632, y: 39.471}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &568883277005120077
 CanvasRenderer:
@@ -420,7 +442,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dia n
+  m_text: '1
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
   m_sharedMaterial: {fileID: -5725290483014253962, guid: 4fc524ce7ce68204b9a1058ab0a5dc09, type: 2}
@@ -683,7 +707,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: -2002145989
+  m_SortingLayerID: -196177845
   m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!114 &6947500749152621916

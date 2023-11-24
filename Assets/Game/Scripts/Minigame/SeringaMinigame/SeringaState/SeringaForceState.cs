@@ -79,6 +79,8 @@ public class SeringaForceState : State
         SoundEffectPlayerManager.Instance.PlaySfx(wrongClickClip);
         seringaController.PrecisionClick.SetActive(false);
         seringaController.ContadorTentativas.IncreaseTentativas();
+        seringaController.BracoPaciente.AtivarPontinho();
+
         yield return new WaitForSeconds(1);
         stateController.SetState(directionState);
         

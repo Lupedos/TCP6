@@ -14,6 +14,7 @@ public class SeringaMinigameController : Minigame
     [SerializeField] private RectTransform seringaObject;
     [SerializeField] private RectTransform machucado;
     [SerializeField] private ContadorTentativas contadorTentativas;
+    [SerializeField] private BracoPaciente bracoPaciente;
     private SeringaStateController stateController;
 
     IViewable seringaObjectViewable;
@@ -24,7 +25,7 @@ public class SeringaMinigameController : Minigame
     public IViewable SeringaObjectViewable => seringaObjectViewable;
     public RectTransform Machucado => machucado;
     public ContadorTentativas ContadorTentativas => contadorTentativas;
-
+    public BracoPaciente BracoPaciente => bracoPaciente;
     void Awake()
     {
         seringaObjectViewable = GetComponent<IViewable>();

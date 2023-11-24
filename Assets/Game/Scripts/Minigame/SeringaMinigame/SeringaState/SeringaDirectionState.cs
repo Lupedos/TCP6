@@ -106,7 +106,7 @@ public class SeringaDirectionState : State
         seringaController.PrecisionClick.SetActive(false);
         seringaController.PrecisionClick.Scrollbar.onValueChanged.RemoveListener(OnScrollbarChange);
         seringaController.ContadorTentativas.IncreaseTentativas();
-
+        seringaController.BracoPaciente.AtivarPontinho();
         yield return new WaitForSeconds(1);
         seringaController.PrecisionClick.SetActive(true);
         seringaController.PrecisionClick.Scrollbar.onValueChanged.AddListener(OnScrollbarChange);

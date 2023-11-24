@@ -176,7 +176,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Finalizar expediente
+  m_text: 'Finalizar
+
+    paciente'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}
   m_sharedMaterial: {fileID: -5677385400761009837, guid: 7e11394929cae544ca5257b8ea42e615, type: 2}

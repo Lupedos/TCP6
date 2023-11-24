@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class SeringaDirectionState : State
@@ -10,7 +11,7 @@ public class SeringaDirectionState : State
     private SeringaForceState forceState;
     [SerializeField] private AudioClip correctClickClip;
     [SerializeField] private AudioClip wrongClickClip;
-
+   
 
     //TODO: para substituir o número 0.5f nas equações la embaixo.
     //na real, esses detalhes nem deveria estar aqui
@@ -104,10 +105,11 @@ public class SeringaDirectionState : State
         SoundEffectPlayerManager.Instance.PlaySfx(wrongClickClip);
         seringaController.PrecisionClick.SetActive(false);
         seringaController.PrecisionClick.Scrollbar.onValueChanged.RemoveListener(OnScrollbarChange);
+        seringaController.ContadorTentativas.IncreaseTentativas();
+
         yield return new WaitForSeconds(1);
         seringaController.PrecisionClick.SetActive(true);
         seringaController.PrecisionClick.Scrollbar.onValueChanged.AddListener(OnScrollbarChange);
-
 
 
     }

@@ -78,8 +78,10 @@ public class SeringaForceState : State
     {
         SoundEffectPlayerManager.Instance.PlaySfx(wrongClickClip);
         seringaController.PrecisionClick.SetActive(false);
+        seringaController.ContadorTentativas.IncreaseTentativas();
         yield return new WaitForSeconds(1);
         stateController.SetState(directionState);
+        
 
     }
 

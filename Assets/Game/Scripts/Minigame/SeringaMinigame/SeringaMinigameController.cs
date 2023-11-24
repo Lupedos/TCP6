@@ -13,6 +13,7 @@ public class SeringaMinigameController : Minigame
     [SerializeField] private Button button_stop;
     [SerializeField] private RectTransform seringaObject;
     [SerializeField] private RectTransform machucado;
+    [SerializeField] private ContadorTentativas contadorTentativas;
     private SeringaStateController stateController;
 
     IViewable seringaObjectViewable;
@@ -22,6 +23,7 @@ public class SeringaMinigameController : Minigame
     public SeringaStateController StateController => stateController;
     public IViewable SeringaObjectViewable => seringaObjectViewable;
     public RectTransform Machucado => machucado;
+    public ContadorTentativas ContadorTentativas => contadorTentativas;
 
     void Awake()
     {

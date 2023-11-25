@@ -1665,6 +1665,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas Menu inicial
       objectReference: {fileID: 0}
+    - target: {fileID: 3027324087356158370, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 66.905
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027324087356158370, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 66.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027324087356158370, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00000026822
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027324087356158370, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4693874345979325712, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1673,6 +1689,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1576045714}
+    - target: {fileID: 5880993209735299674, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 77087b4988e2ca84eb1dd1f93f57c724, type: 3}
+    - target: {fileID: 6205358205954698396, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00012207031
+      objectReference: {fileID: 0}
     - target: {fileID: 6690463384539740901, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1752,6 +1776,10 @@ PrefabInstance:
     - target: {fileID: 6690463384539740901, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7518221889534892355, guid: 4331ef322eab44c42be41a1ed356e386, type: 3}
+      propertyPath: m_Name
+      value: logo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

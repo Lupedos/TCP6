@@ -2140,6 +2140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e404389ff3f290747b1e13fd4b1723d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  machucado: {fileID: 8183645396231870429}
   pontinhosParent: {fileID: 4994668907538311557}
 --- !u!1 &8312396820941432383
 GameObject:

@@ -869,18 +869,6 @@ PrefabInstance:
       value: Canvas UI buttons
       objectReference: {fileID: 0}
     - target: {fileID: 9043684905467702319, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
-      propertyPath: m_Colors.m_NormalColor.b
-      value: 0.48627454
-      objectReference: {fileID: 0}
-    - target: {fileID: 9043684905467702319, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
-      propertyPath: m_Colors.m_NormalColor.g
-      value: 0.5254902
-      objectReference: {fileID: 0}
-    - target: {fileID: 9043684905467702319, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
-      propertyPath: m_Colors.m_NormalColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9043684905467702319, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 543912674}

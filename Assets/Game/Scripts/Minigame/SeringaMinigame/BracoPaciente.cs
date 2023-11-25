@@ -6,12 +6,14 @@ using UnityEngine.UI;
 
 public class BracoPaciente : MonoBehaviour
 {
+    [SerializeField] private Image machucado;
     [SerializeField] private GameObject pontinhosParent;
     private List<Image> pontinhos;
 
 
     private void Start()
     {
+        machucado.DOFade(0, 0);
         pontinhos = pontinhosParent.GetComponentsInChildren<Image>().ToList();
 
     }

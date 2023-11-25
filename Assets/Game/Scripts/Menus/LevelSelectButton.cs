@@ -34,8 +34,6 @@ public class LevelSelectButton : MonoBehaviour, IActivable
         Activate += OnActivate;
         button.onClick.AddListener(LoadLevelOfButtonNumber);
 
-        SetLevelNumber(levelNumber);
-
         CheckLevelReleased();
         CheckLevelCompleted();
 
@@ -48,11 +46,11 @@ public class LevelSelectButton : MonoBehaviour, IActivable
 
     }
 
-    public void SetLevelNumber(int levelNumber)
-    {
-        this.levelNumber = levelNumber;
-        text_button.SetText(levelNumber.ToString());
-    }
+    //public void SetLevelNumber(int levelNumber)
+    //{
+    //    this.levelNumber = levelNumber;
+    //    //text_button.SetText(levelNumber.ToString());
+    //}
 
     //quando muda a atividade do objeto
     private void OnActivate(bool value)

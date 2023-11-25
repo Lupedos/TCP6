@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using System;
 
 public class DialogoScript : MonoBehaviour
 {
@@ -24,26 +25,31 @@ public class DialogoScript : MonoBehaviour
     [SerializeField] private CanvasGroup myTextUI;
     private bool fadeIn = false;
     private bool fadeOut = false;
-    public bool h = false; 
+    public bool h = false;
+    public bool mostrarLogoODialogo = false;
+    public bool printandoTextoDoDialogo = false;
 
     [Space(20)]
     public UnityEvent DialogoIniciou;
     public UnityEvent DialogoTerminou;
-    
+    //Int: index do dialogo mostrando;
+    public UnityEvent<int> QuandoMostraDialogo;
+
+
     void Start()
     {
-        inicioConversa = false; 
+        inicioConversa = false;
         fadeOut = true;
-        pessoa[1].gameObject.SetActive(false); 
+        pessoa[1].gameObject.SetActive(false);
     }
 
-    public void IniciarDialogoInicial() 
+    public void IniciarDialogoInicial()
     {
         DialogoIniciou?.Invoke();
         InicioDialogo(dialogos);
     }
 
-    public void IniciarDialogoFinalCerto() 
+    public void IniciarDialogoFinalCerto()
     {
         ganhou = true;
         final = true;
@@ -53,7 +59,7 @@ public class DialogoScript : MonoBehaviour
 
     }
 
-    public void IniciarDialogoFinalErrado() 
+    public void IniciarDialogoFinalErrado()
     {
         ganhou = false;
         final = true;
@@ -67,13 +73,20 @@ public class DialogoScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (printandoTextoDoDialogo == true)
+        {
+            if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Space))
+            {
+                mostrarLogoODialogo = true;
+            }
+        }
 
-        
-        if(Input.GetButtonDown("Fire1") && conversando
+
+        if (Input.GetButtonDown("Fire1") && conversando
         || Input.GetKeyDown(KeyCode.Space) && conversando)
         {
 
-            if(!inicioConversa)
+            if (!inicioConversa)
             {
                 IniciarDialogoInicial();
             }
@@ -81,73 +94,80 @@ public class DialogoScript : MonoBehaviour
             {
                 proximoDialogo(dialogos);
             }
-        
+
         }
 
-        if(final && ganhou)
+        if (final && ganhou)
         {
-            if(!inicioConversa)
-            InicioDialogo(dialogosFinalCerto);
+            if (!inicioConversa)
+                InicioDialogo(dialogosFinalCerto);
             balao[2].gameObject.SetActive(true);
 
-            if(Input.GetButtonDown("Fire1") && texto.text == dialogosFinalCerto[dialogoIndex]
+            if (Input.GetButtonDown("Fire1") && texto.text == dialogosFinalCerto[dialogoIndex]
             || Input.GetKeyDown(KeyCode.Space) && texto.text == dialogosFinalCerto[dialogoIndex])
             {
                 proximoDialogo(dialogosFinalCerto);
-                
+
             }
 
 
         }
-        else  if(final && ganhou == false)
+        else if (final && ganhou == false)
         {
-            if(!inicioConversa) InicioDialogo(dialogosFinalErrado);
+            if (!inicioConversa) InicioDialogo(dialogosFinalErrado);
             balao[2].gameObject.SetActive(true);
-            if(Input.GetButtonDown("Fire1") && texto.text == dialogosFinalErrado[dialogoIndex]
+            if (Input.GetButtonDown("Fire1") && texto.text == dialogosFinalErrado[dialogoIndex]
             || Input.GetKeyDown(KeyCode.Space) && texto.text == dialogosFinalErrado[dialogoIndex])
             {
                 proximoDialogo(dialogosFinalErrado);
-                
+
             }
         }
-        
 
-        if(fadeIn)
+        if (fadeIn)
         {
-            if( myTextUI.alpha < 1)
+            if (myTextUI.alpha < 1)
             {
                 myTextUI.alpha += Time.deltaTime;
-                if(myTextUI.alpha >= 1)
+                if (myTextUI.alpha >= 1)
                 {
                     fadeIn = false;
                 }
             }
         }
-        if(fadeOut)
+        if (fadeOut)
         {
-            if( myTextUI.alpha >= 0)
+            if (myTextUI.alpha >= 0)
             {
                 myTextUI.alpha -= Time.deltaTime;
-                if(myTextUI.alpha == 0)
+                if (myTextUI.alpha == 0)
                 {
                     fadeOut = false;
                 }
             }
         }
-        
+
+
+
+
+        //if (mostrandoTextoDoDialogo == true)
+        //{
+
+
+        //}
 
 
 
     }
 
-    
+
     void InicioDialogo(string[] mensagem)
     {
         dialogoIndex = 0;
         StartCoroutine(MostrarDialogo(mensagem));
         inicioConversa = true;
         conversando = true;
-        if(final)
+        if (final)
         {
             pessoa[1].gameObject.SetActive(true);
             pessoa[0].gameObject.SetActive(false);
@@ -158,14 +178,14 @@ public class DialogoScript : MonoBehaviour
         }
         fadeIn = true;
         fadeOut = false;
-        
+
     }
 
     void proximoDialogo(string[] mensagem)
     {
         dialogoIndex++;
-
-        if(dialogoIndex < mensagem.Length)
+        QuandoMostraDialogo?.Invoke(dialogoIndex);
+        if (dialogoIndex < mensagem.Length)
         {
             StartCoroutine(MostrarDialogo(mensagem));
         }
@@ -173,18 +193,18 @@ public class DialogoScript : MonoBehaviour
         {
             dialogoIndex = 0;
             inicioConversa = false;
-            if(final)
+            if (final)
             {
                 pessoa[1].gameObject.SetActive(false);
             }
-           
-                
-            
+
+
+
             conversando = false;
             fadeOut = true;
             final = false;
             balao[0].gameObject.SetActive(false);
-            balao[1].gameObject.SetActive(true);  
+            balao[1].gameObject.SetActive(true);
             DialogoTerminou?.Invoke();
 
         }
@@ -193,10 +213,10 @@ public class DialogoScript : MonoBehaviour
 
     IEnumerator MostrarDialogo(string[] mensagem)
     {
+        printandoTextoDoDialogo = true;
         SoundEffectPlayerManager.Instance.PlaySfx(balaoFalaClip);
         texto.text = "";
-        bool pular = false;
-        if(conversando && !final && !medicafalando)
+        if (conversando && !final && !medicafalando)
         {
             h = !h;
             balao[0].gameObject.SetActive(h);
@@ -204,26 +224,36 @@ public class DialogoScript : MonoBehaviour
             balao[1].gameObject.SetActive(h);
             h = !h;
         }
-        
 
-        //Botar audio play aqui
+
+
         foreach (char letter in mensagem[dialogoIndex])
-        {   
-            yield return new WaitForSeconds(velocidadeCaracteres);
-            if(pular == false)
+        {
+            if (mostrarLogoODialogo == false)
             {
                 texto.text += letter;
-                if(Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Space))
-                {
-                    texto.text = "";
-                    texto.text = mensagem[dialogoIndex];
-                    pular = true;
-                }
+                yield return new WaitForSeconds(velocidadeCaracteres);
+
             }
-           
-            
-            
+            else
+            {
+                texto.SetText(mensagem[dialogoIndex]);
+                printandoTextoDoDialogo = false;
+                mostrarLogoODialogo = false;
+                yield return null;
+                break;
+            }
+
+
+
+
         }
+
+
+
+
+
+
     }
 
 

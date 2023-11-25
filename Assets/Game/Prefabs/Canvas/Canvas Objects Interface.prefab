@@ -114,6 +114,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4617293941695338557}
     m_Modifications:
+    - target: {fileID: 1398357224161320533, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1687753086149748502, guid: 0cd6adf1c2f71774a85a5cd1a9239d73, type: 3}
       propertyPath: m_Name
       value: Microscopio UI

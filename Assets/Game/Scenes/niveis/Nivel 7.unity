@@ -337,41 +337,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1400395020960806228, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 409.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 1400395020960806228, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 589.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 1400395020960806228, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1400395020960806228, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 294.65
-      objectReference: {fileID: 0}
     - target: {fileID: 2021177430966699326, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Name
       value: Canvas Dialogo
-      objectReference: {fileID: 0}
-    - target: {fileID: 3086476353172081525, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3086476353172081525, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b50b103f65d1e354b9c71541a25297b5, type: 3}
-    - target: {fileID: 3686232975831372024, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5dbcdc776173f01459c4740ea7bb5ac7, type: 3}
-    - target: {fileID: 3686232975831372024, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5160123945807009919, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Pivot.x
@@ -454,28 +422,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: dialogos.Array.data[1]
-      value: "Bom dia! Estou h\xE1 duas semanas com uma tosse seca e febres \xE0
-        noite."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: dialogos.Array.data[2]
-      value: "Vamos analisar isto, mas antes me diga: voc\xEA e sua filha se encaixam
-        em algum destes fatores de risco? \u2018Moram em local aglomerado e fechado?
-        \xC9 fumante passivo de tabaco? \xC9 da \xE1rea de sa\xFAde? Tem HIV ou C\xE2ncer?
-        E por fim, fez algum transplante de \xF3rg\xE3o?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: dialogos.Array.data[3]
-      value: "Eu trabalho na \xE1rea de sa\xFAde."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: dialogosFinalErrado.Array.data[1]
-      value: "Este paciente est\xE1 contaminado, por que estes sintomas apresentados
-        se encaixam nos sintomas comuns da tuberculose, al\xE9m de que o paciente
-        apresenta fatores de risco da tuberculose."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: DialogoTerminou.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 543912674}
@@ -483,10 +429,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1109534421}
-    - target: {fileID: 6705135951923017359, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -691,6 +633,10 @@ PrefabInstance:
       value: '4
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737934985215799174, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -199.79999
       objectReference: {fileID: 0}
     - target: {fileID: 2638923843460248678, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
       propertyPath: m_Name

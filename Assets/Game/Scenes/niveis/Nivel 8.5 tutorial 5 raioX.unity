@@ -446,46 +446,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.size
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[0]
-      value: "Hoje a dificuldade aumentar\xE1 um pouquinho. Voc\xEA ter\xE1 contato
-        pela primeira vez com um dos nossos exames que ajudam no diagn\xF3stico para
-        tuberculose, e ele se chama PPD, tamb\xE9m conhecido como teste tubercul\xEDnico
-        ou rea\xE7\xE3o de Mantoux.\u201D"
+      value: "Ol\xE1 estagi\xE1ria(o)! Hoje o Hospital est\xE1 cheio, n\xE3o \xE9?
+        Bom, vamos aos trabalhos!"
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[1]
-      value: "Esse teste consiste em uma inje\xE7\xE3o feita no antebra\xE7o do paciente
-        que simula o cont\xE1gio da doen\xE7a. Preste aten\xE7\xE3o no momento da
-        aplica\xE7\xE3o para acertar o local correto do antebra\xE7o, e cuidado com
-        a forma da aplica\xE7\xE3o! Sua fun\xE7\xE3o ser\xE1 al\xE9m da aplica\xE7\xE3o,
-        observar o tamanho da rea\xE7\xE3o dessa inje\xE7\xE3o."
+      value: "Hoje te mostraremos o \xFAltimo exame a ser usado para identificar
+        se o paciente est\xE1 contaminado, que \xE9 o Raio-x do T\xF3rax (pulm\xE3o)."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[2]
-      value: "Neste caso, se os anticorpos, que s\xE3o c\xE9lulas protetoras contra
-        corpos estranhos, reagirem, aparecer\xE1 uma mancha grande avermelhada na
-        \xE1rea aplicada. Significa que ou a pessoa est\xE1 vacinada ou est\xE1 contaminada
-        com a doen\xE7a, dando resultado positivo."
+      value: "Com o Raio-x em m\xE3os, procure por poss\xEDveis sequelas que a doen\xE7a
+        pode ter deixado no pulm\xE3o, caso a pessoa j\xE1 tenha tido contato com
+        a bact\xE9ria."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[3]
-      value: "Caso o corpo n\xE3o reaja, aparecer\xE1 uma mancha pequena avermelhada
-        na \xE1rea. Significa que a pessoa n\xE3o est\xE1 contaminada ou tem a imunidade
-        fraca por conta de imunossupressores, dando resultado negativo."
+      value: "Encontre estas seguintes formas nas imagens. Um formato circular e
+        redondo, e quando observar que uma \xE1rea est\xE1 com um formato menor do
+        que deveria estar. Como nessas imagens que estou te mostrando:"
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[4]
-      value: "Por\xE9m esse exame traz possibilidades de dar resultados falso-positivo
-        e falso-negativo. Te ajudarei agora, a identificar quando for um falso-resultado."
+      value: "N\xE3o se preocupe, voc\xEA sair\xE1 bem. Caso haja outras formas no
+        raio-x, pode significar cont\xE1gio de outra doen\xE7a. Ent\xE3o junte todos
+        os seus conhecimentos adquiridos durante a semana, para diagnosticar de forma
+        correta os pacientes!"
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[5]
-      value: "Quando o resultado do exame for positivo, caso a pessoa seja vacinada
-        contra tuberculose (vacina BCG), o resultado ser\xE1 falso-positivo, ou seja,
-        na realidade o diagn\xF3stico ser\xE1 negativo."
+      value: Boa sorte!
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[6]
@@ -579,9 +573,17 @@ PrefabInstance:
       objectReference: {fileID: 1109534421}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5160123945807009919, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 828528110}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+--- !u!224 &828528110 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+  m_PrefabInstance: {fileID: 1104694247}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1101346414 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9043684905467702319, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
@@ -593,6 +595,123 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1104694247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1949504564}
+    m_Modifications:
+    - target: {fileID: 1404937535166670505, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_Name
+      value: ImagensTutorialDialogo certo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -639
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -359.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 319.50003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 180.14001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982036736764033505, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: imagensDialogos.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982036736764033505, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: imagensDialogos.Array.data[0].index
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982036736764033505, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: imagensDialogos.Array.data[1].index
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982036736764033505, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: imagensDialogos.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d477a289728dd2b4bbabc8a1712222f4, type: 3}
+    - target: {fileID: 6982036736764033505, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: imagensDialogos.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 357617f1f59e56240b415049bb9efee7, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
 --- !u!1 &1109534419
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +883,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1949504564 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5160123945807009919, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+  m_PrefabInstance: {fileID: 580378050}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &350121139734012166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -774,7 +898,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1440860337202091091, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
       propertyPath: m_text
-      value: '3
+      value: '5
 
 '
       objectReference: {fileID: 0}

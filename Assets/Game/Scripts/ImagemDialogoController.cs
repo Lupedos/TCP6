@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class ImagemDialogoController : MonoBehaviour
@@ -11,10 +12,21 @@ public class ImagemDialogoController : MonoBehaviour
 
     [SerializeField] private List<ImagensDialogo> imagensDialogos;
 
+    private DialogoScript dialogoScript;
+
     private void Start()
     {
+        dialogoScript = FindObjectOfType<DialogoScript>();
+        dialogoScript.QuandoMostraDialogo.AddListener(QuandoMostraDialogo);
+
         image_balaoFundo.DOFade(0, 0);
         image.DOFade(0, 0);
+    }
+
+    private void OnDestroy()
+    {
+        dialogoScript.QuandoMostraDialogo.RemoveListener(QuandoMostraDialogo);
+
     }
 
     public void QuandoMostraDialogo(int index)

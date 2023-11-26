@@ -455,8 +455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[1]
-      value: "Bom dia! Estou tossindo h\xE1 TR\xCAS semanas e estou com falta de
-        ar."
+      value: "Bom dia! Estou tossindo h\xE1 3 semanas e estou com falta de ar."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[2]

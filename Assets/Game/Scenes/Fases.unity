@@ -385,6 +385,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 485181921865182315, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
+      propertyPath: ultimolevelDoDia
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 786213185846223679, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -481,6 +485,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2844465473353549043, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
+      propertyPath: ultimolevelDoDia
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3110602637393431463, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -507,7 +515,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310347199195579879, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -93.56094
+      value: 93.561005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376326216062657137, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376326216062657137, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376326216062657137, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3532454176851007354, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
       propertyPath: m_AnchorMax.y
@@ -537,6 +557,10 @@ PrefabInstance:
       propertyPath: m_Value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4420083484055050286, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
+      propertyPath: ultimolevelDoDia
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4705563147175406714, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -552,6 +576,14 @@ PrefabInstance:
     - target: {fileID: 4705563147175406714, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557162773671027502, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
+      propertyPath: ultimolevelDoDia
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979227680763424288, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
+      propertyPath: ultimolevelDoDia
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6820980070920135028, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
       propertyPath: m_AnchorMax.y
@@ -588,8 +620,67 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8754442747499724302, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3039948056302093867}
   m_SourcePrefab: {fileID: 100100000, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
+--- !u!1 &3039948056302093866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8754442747499724302, guid: 800a3a2d7dbf38b4686b9a5c54c0a8be, type: 3}
+  m_PrefabInstance: {fileID: 3039948056302093865}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3039948056302093867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3039948056302093866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a473838327ee4a49a7146ee19d31007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dias:
+  - niveis:
+    - buildIndex: 5
+      jaJogou: 0
+      Acertou: 0
+    - buildIndex: 6
+      jaJogou: 0
+      Acertou: 0
+  - niveis:
+    - buildIndex: 6
+      jaJogou: 0
+      Acertou: 0
+  - niveis:
+    - buildIndex: 10
+      jaJogou: 0
+      Acertou: 0
+    - buildIndex: 11
+      jaJogou: 0
+      Acertou: 0
+    - buildIndex: 12
+      jaJogou: 0
+      Acertou: 0
+  - niveis:
+    - buildIndex: 14
+      jaJogou: 0
+      Acertou: 0
+    - buildIndex: 15
+      jaJogou: 0
+      Acertou: 0
+  - niveis:
+    - buildIndex: 17
+      jaJogou: 0
+      Acertou: 0
+    - buildIndex: 18
+      jaJogou: 0
+      Acertou: 0
+    - buildIndex: 19
+      jaJogou: 0
+      Acertou: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

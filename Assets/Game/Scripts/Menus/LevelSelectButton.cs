@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class LevelSelectButton : MonoBehaviour, IActivable
 {
     public int levelNumber = 1;
+    public int ultimolevelDoDia;
 
     [SerializeField] private TMP_Text text_button;
     [SerializeField] private Image image;
@@ -77,7 +78,7 @@ public class LevelSelectButton : MonoBehaviour, IActivable
 
     public void CheckLevelCompleted()
     {
-        bool isLevelCompleted = (SaveLoad.GetLevelCompleted() >= levelNumber);
+        bool isLevelCompleted = (SaveLoad.GetLevelCompleted() >= ultimolevelDoDia);
         levelCompletedMarkup.SetActive(isLevelCompleted);
     }
 

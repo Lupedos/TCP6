@@ -450,6 +450,12 @@ PrefabInstance:
       value: "N\xE3o me encaixo em nenhum destes fatores."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: dialogosFinalErrado.Array.data[1]
+      value: "Este paciente n\xE3o est\xE1 contaminado, por que estes sintomas apresentados
+        n\xE3o se encaixam nos sintomas comuns da tuberculose, al\xE9m de que o paciente
+        apresenta fatores de risco da tuberculose. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: DialogoTerminou.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 543912674}
@@ -649,6 +655,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 31086260470455041, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1440860337202091091, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
       propertyPath: m_text
       value: 1
@@ -754,6 +764,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
+--- !u!114 &350121139734012167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 31086260470455041, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
+  m_PrefabInstance: {fileID: 350121139734012166}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1127769647834542739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1589,6 +1610,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4683805716108238465, guid: 8824623d26953d74781dc853a8bb33ca, type: 3}
+      propertyPath: homeButton
+      value: 
+      objectReference: {fileID: 350121139734012167}
     - target: {fileID: 8845150589473888576, guid: 8824623d26953d74781dc853a8bb33ca, type: 3}
       propertyPath: m_Name
       value: Canvas_SceneLoader

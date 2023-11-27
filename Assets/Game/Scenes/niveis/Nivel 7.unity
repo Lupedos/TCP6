@@ -422,6 +422,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: dialogos.Array.data[1]
+      value: "Bom dia! Estou h\xE1 2 semanas com uma tosse seca e febres \xE0 noite."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: dialogos.Array.data[2]
+      value: "Vamos analisar isto, mas antes me diga: voc\xEA se encaixa em algum
+        destes fatores de risco? \u2018Mora em local aglomerado e fechado? \xC9 fumante
+        de tabaco? \xC9 da \xE1rea de sa\xFAde? Tem HIV ou C\xE2ncer? E por fim,
+        fez algum transplante de \xF3rg\xE3o?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: dialogos.Array.data[3]
+      value: "Eu trabalho na \xE1rea de sa\xFAde."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: dialogosFinalErrado.Array.data[1]
+      value: "Este paciente n\xE3o est\xE1 contaminado, por que estes sintomas apresentados
+        podem at\xE9 encaixar nos sintomas comuns da tuberculose, mas o exame deu
+        negativo e o paciente n\xE3o se encaixa nos fatores de risco que causam falso
+        positivo ou falso negativo no exame de PPD."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: DialogoTerminou.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 543912674}
@@ -1001,6 +1023,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2151069312146928259, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2179631226370240220, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1316,6 +1342,10 @@ PrefabInstance:
     - target: {fileID: 8347438193394006008, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8400788806193323893, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y

@@ -888,16 +888,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6982036736764033505, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
       propertyPath: imagensDialogos.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6982036736764033505, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
       propertyPath: imagensDialogos.Array.data[0].index
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6982036736764033505, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: imagensDialogos.Array.data[1].index
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982036736764033505, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
       propertyPath: imagensDialogos.Array.data[0].sprite
       value: 
       objectReference: {fileID: 21300000, guid: 385df59e1d67a9c49a13d65ad5e6e14f, type: 3}
+    - target: {fileID: 6982036736764033505, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: imagensDialogos.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f5c8ca6e07ebf2240bdf24c782384f86, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

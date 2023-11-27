@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: 7016310088659999079}
   - component: {fileID: 2500679873796807396}
   - component: {fileID: 31086260470455041}
+  - component: {fileID: 6438682495102787638}
   m_Layer: 5
   m_Name: Button_config
   m_TagString: Untagged
@@ -313,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e058decce4d529a4692cafa3250a43ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6171e23a64727a44b9a58819fda71a33, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -368,8 +369,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ObjectInterface, Assembly-CSharp
-        m_MethodName: Show
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: PerformLoadLevelSelectScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -379,6 +380,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6438682495102787638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919898404508669897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269ca58073e12a44eabe41cf210ffa69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2638923843460248678
 GameObject:
   m_ObjectHideFlags: 0

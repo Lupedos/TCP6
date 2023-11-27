@@ -607,6 +607,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ImagensTutorialDialogo certo
       objectReference: {fileID: 0}
+    - target: {fileID: 1991076794095999869, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 336.299
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991076794095999869, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 159.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991076794095999869, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991076794095999869, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10.266
+      objectReference: {fileID: 0}
     - target: {fileID: 4506947856208948639, guid: 34cf804cf1bf3144886e16bf52ab19ac, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1281,6 +1297,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2151069312146928259, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2179631226370240220, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1577,6 +1597,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 323693659}
+    - target: {fileID: 8347438193394006008, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8400788806193323893, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

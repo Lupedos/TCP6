@@ -455,19 +455,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[1]
-      value: Bom dia! Estou com uma tosse seca intensa, que chegou a sair um pouco
-        de sangue. Me sinto muito cansado ultimamente e com falta de ar.
+      value: "Bom dia! Estou tossindo h\xE1 4 semanas e nessa \xFAltima semana chegou
+        a sair sangue. Tamb\xE9m estou com dores no t\xF3rax. Eu estava resfriado
+        no in\xEDcio do m\xEAs, mas como estava aparecendo outros sintomas, achei
+        melhor vir para ter certeza do diagn\xF3stico."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[2]
-      value: "Ok! Me responda: voc\xEA se encaixa em algum destes fatores de risco?
-        \u2018Mora em local aglomerado e fechado? \xC9 fumante de tabaco? \xC9 da
-        \xE1rea de sa\xFAde? Tem HIV ou C\xE2ncer? E por fim, fez algum transplante
+      value: "Entendi, mas antes me diga: voc\xEA se encaixa em algum destes fatores
+        de risco? \u2018Mora em local aglomerado e fechado? \xC9 fumante de tabaco?
+        \xC9 da \xE1rea de sa\xFAde? Tem HIV ou C\xE2ncer? E por fim, fez algum transplante
         de \xF3rg\xE3o?"
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[3]
-      value: Sou fumante.
+      value: Moro com muitas pessoas em um apartamento bem pequeno.
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogosFinalErrado.Array.data[1]

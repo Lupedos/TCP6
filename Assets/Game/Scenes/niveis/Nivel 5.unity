@@ -462,28 +462,31 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
+      propertyPath: ganhou
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[1]
-      value: "Bom dia! Estou tendo febres que vai e vem, junto de enj\xF4os. J\xE1
-        vomitei algumas vezes."
+      value: "Bom dia! Tenho tossido direto faz 3 semanas, me sinto muito fatigada,
+        e n\xE3o tenho conseguido dormir."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[2]
-      value: "Entendi! Me responda: voc\xEA se encaixa em algum destes fatores de
-        risco? \u2018Mora em local aglomerado e fechado? \xC9 fumante de tabaco?
-        \xC9 da \xE1rea de sa\xFAde? Tem HIV ou C\xE2ncer? E por fim, fez algum transplante
+      value: "T\xE1 bom, me diga: voc\xEA se encaixa em algum destes fatores de risco?
+        \u2018Mora em local aglomerado e fechado? \xC9 fumante de tabaco? \xC9 da
+        \xE1rea de sa\xFAde? Tem HIV ou C\xE2ncer? E por fim, fez algum transplante
         de \xF3rg\xE3o?"
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[3]
-      value: Moro com muita gente em local pequeno.
+      value: "Fiz transplante de \xF3rg\xE3o e tomo rem\xE9dio imunossupressor."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogosFinalErrado.Array.data[1]
-      value: "Este paciente n\xE3o est\xE1 contaminado. A febre n\xE3o \xE9 apenas
-        febre noturna, neste caso, estes sintomas apresentados n\xE3o se encaixam
-        nos sintomas comuns da tuberculose. Mesmo que o paciente se encaixe em um
-        fator de risco, \xE9 mais importante para a diagnose correta, o paciente
-        apresentar algum sintoma."
+      value: "Este paciente est\xE1 contaminado, por que estes sintomas apresentados
+        se encaixam nos sintomas comuns da tuberculose, al\xE9m de que o paciente
+        apresenta fatores de risco da tuberculose, j\xE1 que rem\xE9dios imunossupressores
+        podem interferir no resultado do PPD como falso negativo."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: DialogoTerminou.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -897,6 +900,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
+      propertyPath: config.pacienteContamindo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 664612601784700218, guid: f7f360de6779b01448322c7f59518401, type: 3}
       propertyPath: config.microscopioObjectOn
       value: 0
       objectReference: {fileID: 0}
@@ -1083,7 +1090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2151069312146928259, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2179631226370240220, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1400,6 +1407,10 @@ PrefabInstance:
     - target: {fileID: 8347438193394006008, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8400788806193323893, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y

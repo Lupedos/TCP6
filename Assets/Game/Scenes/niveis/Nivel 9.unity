@@ -307,6 +307,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133bd2e7832ff4c4980a466e7637c008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &534223647 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4683805716108238465, guid: 8824623d26953d74781dc853a8bb33ca, type: 3}
+  m_PrefabInstance: {fileID: 6652266023225472850}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13969d9b2480b9341924559740e932ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &543912674 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3411869560663712220, guid: f7f360de6779b01448322c7f59518401, type: 3}
@@ -368,7 +379,7 @@ PrefabInstance:
     - target: {fileID: 3686232975831372024, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: daaebd4fbd95fda4f93fbd7f656f5bc6, type: 3}
+      objectReference: {fileID: 21300000, guid: 021b7239cd5f5414b8a5851926b7520c, type: 3}
     - target: {fileID: 3686232975831372024, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
@@ -455,10 +466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[1]
-      value: "Bom dia! Estou tossindo h\xE1 4 semanas e nessa \xFAltima semana chegou
-        a sair sangue. Tamb\xE9m estou com dores no t\xF3rax. Eu estava resfriado
-        no in\xEDcio do m\xEAs, mas como estava aparecendo outros sintomas, achei
-        melhor vir para ter certeza do diagn\xF3stico."
+      value: "Bom dia! Estou com uma tosse produtiva h\xE1 2 semanas."
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[2]
@@ -469,13 +477,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogos.Array.data[3]
-      value: Moro com muitas pessoas em um apartamento bem pequeno.
+      value: Fumo tabaco.
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: dialogosFinalErrado.Array.data[1]
-      value: "Este paciente est\xE1 contaminado, por que estes sintomas apresentados
-        se encaixam nos sintomas comuns da tuberculose, al\xE9m de que o paciente
-        apresenta fatores de risco da tuberculose."
+      value: "Este paciente n\xE3o est\xE1 contaminado, por que estes sintomas apresentados
+        mesmo se encaixando nos sintomas comuns da tuberculose, os exames deram negativo.
+        Preste aten\xE7\xE3o nos pr\xF3ximos pacientes!"
       objectReference: {fileID: 0}
     - target: {fileID: 6405075101335574114, guid: 1d2faf8580efda64bb1c207835db02f6, type: 3}
       propertyPath: DialogoTerminou.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -687,10 +695,18 @@ PrefabInstance:
     - target: {fileID: 31086260470455041, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 534223647}
     - target: {fileID: 1440860337202091091, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
       propertyPath: m_text
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737934985215799174, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -199.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919898404508669897, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2638923843460248678, guid: 92dbb135c0763ca42a874c79f768edc0, type: 3}
       propertyPath: m_Name
@@ -1055,6 +1071,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2151069312146928259, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2179631226370240220, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1375,6 +1395,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ac3ec489c63b366478b01885849d29a8, type: 3}
+    - target: {fileID: 8347438193394006008, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8400788806193323893, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8530030727223630292, guid: b6ea74fc1fa8c8b4caa672ced135905d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
